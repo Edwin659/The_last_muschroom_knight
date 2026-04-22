@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -27,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public int maxJumps = 2;
     private int jumpsleft;
+    private bool wasGrounded = true;
+
+    //Attack
+    private bool isAttacking;
+
 
     //Animation
     private Animator playerAnim;
@@ -37,29 +43,70 @@ public class PlayerMovement : MonoBehaviour
     public float KBTotalTIme;
     public bool KnockFromRight;
 
+    // Audio
+    public AudioSource audioSource;
+    public AudioClip WalkSound;
+    public AudioClip RunSound;
+    public AudioClip JumpSound;
+    public AudioClip LandingSound;
+    public AudioClip AttackSound;
+
     void Start()
     {
-        playerRb = GetComponent<Rigidbody2D>(); // sur le parent
-        playerAnim = GetComponentInChildren<Animator>(); // sur l�enfant
+        playerRb = GetComponent<Rigidbody2D>(); // Parent
+        playerAnim = GetComponentInChildren<Animator>(); // Children
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Update()
     {
-        input = Input.GetAxisRaw("Horizontal");
+        if (isAttacking)
+        {
+            input = 0;
+        }
+        else
+        {
+            input = Input.GetAxisRaw("Horizontal");
+        }
 
-        if (Input.GetKey(KeyCode.LeftShift) && input != 0)//If running Shift pressed
+        //Run
+        if (Input.GetKey(KeyCode.LeftShift) && input != 0 && !isAttacking)
         {
             currentspeed = runningSpeed;
             playerAnim.SetBool("IsRunning", true);
+            if (isGrounded)
+            {
+                audioSource.pitch = 2.0f; // accÃ©lÃ¨re le son
+                if (!audioSource.isPlaying)
+                    audioSource.PlayOneShot(RunSound);
+            }
         }
         else
         {
             playerAnim.SetBool("IsRunning", false);
             currentspeed = speed;
+            audioSource.pitch = 1.5f;
         }
 
         //Walk
+        if (!isAttacking)
+        {
+            if (input != 0)
+            {
+                playerAnim.SetBool("IsWalking", true);
+
+                if (isGrounded && !playerAnim.GetBool("IsRunning"))
+                {
+                    if (!audioSource.isPlaying)
+                        audioSource.PlayOneShot(WalkSound);
+                }
+            }
+            else
+            {
+                playerAnim.SetBool("IsWalking", false);
+            }
+        }
+
         if (input < 0)//left
         {
             //transform.localScale = new Vector3(1, 1, 1);//turn left
@@ -71,16 +118,29 @@ public class PlayerMovement : MonoBehaviour
             //transform.localScale = new Vector3(-1,1,1);
             spriteRenderer.flipX = true;
         }
-        playerAnim.SetBool("IsWalking", input != 0);
+        
 
         //jump
         if (isGrounded && playerRb.linearVelocity.y<=0.1f)
         {
             jumpsleft = maxJumps;
         }
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame && isAttacking == false)
         {
             OnJump();
+        }
+        //Landing
+        if (!wasGrounded && isGrounded && playerRb.linearVelocity.y <= 0.1f)
+        {
+            audioSource.PlayOneShot(LandingSound);
+        }
+
+        wasGrounded = isGrounded;
+
+        //attack
+        if (Input.GetKey(KeyCode.E))
+        {
+            Attack();
         }
     }
 
@@ -90,8 +150,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (KBCounter <= 0)//if nothing just move
         {
-            playerRb.linearVelocity = new Vector2(input * currentspeed, playerRb.linearVelocity.y);
-
+            if (!isAttacking) // prevent movement while attacking
+            {
+                playerRb.linearVelocity = new Vector2(input * currentspeed, playerRb.linearVelocity.y);
+            }
         }
         else
         {
@@ -120,6 +182,24 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("No jumps left " + jumpsleft);
         }
+        if(jumpsleft == maxJumps) { audioSource.PlayOneShot(JumpSound); }
+    }
+    public void Attack()
+    {
+        isAttacking = true;
+        playerAnim.SetTrigger("IsAttacking");
+        playerRb.linearVelocity = Vector2.zero;
+        Invoke("PlayAttackSound", 0.7f);
+        
+    }
+    void PlayAttackSound()
+    {
+        audioSource.PlayOneShot(AttackSound);
+    }
+    public void EndAttack()
+    {
+        isAttacking = false;
+        Debug.Log("Attack end");
     }
 }
 
