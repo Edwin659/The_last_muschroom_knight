@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     //Attack
     private bool isAttacking;
 
+
     //Animation
     private Animator playerAnim;
 
@@ -52,8 +53,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        playerRb = GetComponent<Rigidbody2D>(); // sur le parent
-        playerAnim = GetComponentInChildren<Animator>(); // sur l�enfant
+        playerRb = GetComponent<Rigidbody2D>(); // Parent
+        playerAnim = GetComponentInChildren<Animator>(); // Children
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
     }
 
@@ -75,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             playerAnim.SetBool("IsRunning", true);
             if (isGrounded)
             {
-                audioSource.pitch = 2.0f; // accélère le son
+                audioSource.pitch = 2.0f; // accÃ©lÃ¨re le son
                 if (!audioSource.isPlaying)
                     audioSource.PlayOneShot(RunSound);
             }
