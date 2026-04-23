@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             playerAnim.SetBool("IsRunning", true);
             if (isGrounded)
             {
-                audioSource.pitch = 2.0f; // accÃ©lÃ¨re le son
+                audioSource.pitch = 2.0f;
                 if (!audioSource.isPlaying)
                     audioSource.PlayOneShot(RunSound);
             }
@@ -109,24 +109,22 @@ public class PlayerMovement : MonoBehaviour
 
         if (input < 0)//left
         {
-            //transform.localScale = new Vector3(1, 1, 1);//turn left
             spriteRenderer.flipX = false;
         }
         else if (input > 0)//right
         {
             //turn right
-            //transform.localScale = new Vector3(-1,1,1);
             spriteRenderer.flipX = true;
         }
-        
 
-        //jump
+            //jump
         if (isGrounded && playerRb.linearVelocity.y<=0.1f)
         {
             jumpsleft = maxJumps;
         }
         if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame && isAttacking == false)
         {
+            Debug.Log("Jump pressed!");
             OnJump();
         }
         //Landing

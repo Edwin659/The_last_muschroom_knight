@@ -267,7 +267,7 @@ Transform:
   m_GameObject: {fileID: 243402063}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.195, y: 13.949, z: 0}
+  m_LocalPosition: {x: -13.074, y: 13.946, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -885,6 +885,7 @@ GameObject:
   - component: {fileID: 808436180}
   - component: {fileID: 808436181}
   - component: {fileID: 808436185}
+  - component: {fileID: 808436186}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -994,16 +995,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  runningSpeed: 1.5
+  runningSpeed: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   isGrounded: 0
   feetPosition: {fileID: 95885602}
   groundCheckCircle: 0
   jumpTime: 0.35
   jumpTimeCounter: 0
-  jumpForce: 2.5
+  jumpForce: 0
   maxJumps: 2
   KBForce: 0
   KBCounter: 0
@@ -1112,6 +1113,40 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &808436186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808436177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1dc705ad9e39544ca30266e7de84f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  speed: 0
+  runningSpeed: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isGrounded: 0
+  feetPosition: {fileID: 0}
+  groundCheckCircle: 0
+  jumpTime: 0.35
+  jumpTimeCounter: 0
+  jumpForce: 0
+  maxJumps: 2
+  KBForce: 0
+  KBCounter: 0
+  KBTotalTIme: 0
+  KnockFromRight: 0
+  audioSource: {fileID: 0}
+  WalkSound: {fileID: 0}
+  RunSound: {fileID: 0}
+  JumpSound: {fileID: 0}
+  LandingSound: {fileID: 0}
+  AttackSound: {fileID: 0}
 --- !u!1 &1176800368
 GameObject:
   m_ObjectHideFlags: 0
