@@ -36,6 +36,9 @@ public class PlayerMovement : MonoBehaviour
 
     //Animation
     private Animator playerAnim;
+    // private float lastSlopeAngle = 0f;
+    private Vector2 previousNormal = Vector2.up;
+
 
     //For knok back
     public float KBForce;
@@ -50,6 +53,15 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip JumpSound;
     public AudioClip LandingSound;
     public AudioClip AttackSound;
+
+
+    //Friction
+    public PhysicsMaterial2D noFriction;
+    public PhysicsMaterial2D highFriction;
+
+    //Temporisation
+    private float groundAlignDelay = 0.1f;
+    private float groundAlignTimer = 0f;
 
     void Start()
     {
@@ -144,8 +156,56 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
+        bool center = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
+        bool left = Physics2D.OverlapCircle(feetPosition.position + Vector3.left * 0.2f, groundCheckCircle, groundLayer);
+        bool right = Physics2D.OverlapCircle(feetPosition.position + Vector3.right * 0.2f, groundCheckCircle, groundLayer);
 
+        isGrounded = center || left || right;
+        if (isGrounded)
+        {
+            if (groundAlignTimer > 0f) {
+                groundAlignTimer -= Time.fixedDeltaTime;
+            }
+            else { 
+                RaycastHit2D centerHit = Physics2D.Raycast(feetPosition.position, Vector2.down, 1f, groundLayer);
+                RaycastHit2D leftHit = Physics2D.Raycast(feetPosition.position + Vector3.left * 0.2f, Vector2.down, 1f, groundLayer);
+                RaycastHit2D rightHit = Physics2D.Raycast(feetPosition.position + Vector3.right * 0.2f, Vector2.down, 1f, groundLayer);
+
+                RaycastHit2D hit = default;
+                if (centerHit.collider != null) hit = centerHit;
+                else if (leftHit.collider != null) hit = leftHit;
+                else if (rightHit.collider != null) hit = rightHit; 
+
+                if (hit.collider != null)
+                {
+                    Vector2 smoothedNormal = Vector2.Lerp(previousNormal, hit.normal, 0.3f);
+                    previousNormal = smoothedNormal;
+
+                    float angle = Mathf.Atan2(smoothedNormal.y, smoothedNormal.x) * Mathf.Rad2Deg;
+                    //Debug.Log(angle);
+                    float targetAngle = angle - 90;
+
+                    //if 60f>angle>6f
+                    if (Mathf.Abs(targetAngle) > 6f && Mathf.Abs(targetAngle) < 60f)
+                    {
+                        Quaternion targetRotation = Quaternion.AngleAxis(targetAngle, Vector3.forward);
+                        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.fixedDeltaTime * 10f);
+                    }
+                    else
+                    {
+                        transform.rotation = Quaternion.identity;
+                    }
+                }
+            }
+        }
+        else
+        {
+            //if no angle
+            transform.rotation = Quaternion.identity;
+            groundAlignTimer = groundAlignDelay;
+        }
+
+        //KnockBack
         if (KBCounter <= 0)//if nothing just move
         {
             if (!isAttacking) // prevent movement while attacking
@@ -166,21 +226,29 @@ public class PlayerMovement : MonoBehaviour
             }
             KBCounter -= Time.deltaTime;//Times's counter before the player regains power 
         }
+        if (isGrounded && input == 0)
+        {
+            playerRb.sharedMaterial = highFriction;
+        }
+        else
+        {
+            playerRb.sharedMaterial = noFriction;
+        }
     }
     public void OnJump()
     {
-
+        if (jumpsleft == maxJumps) { audioSource.PlayOneShot(JumpSound); }
         if (jumpsleft > 0)
         {
             playerRb.linearVelocity = new Vector2(playerRb.linearVelocity.x, 0);
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpsleft--;
+            transform.rotation = Quaternion.identity;
         }
         else
         {
             Debug.Log("No jumps left " + jumpsleft);
         }
-        if(jumpsleft == maxJumps) { audioSource.PlayOneShot(JumpSound); }
     }
     public void Attack()
     {
