@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44205e32ee77a0244b260bd2f456b261, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera
-  player: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
+  player: {fileID: 8821467498031203969, guid: 575b00d509e747840b2970d14b2bfdad, type: 3}
+  offset: {x: 0, y: 0, z: -10}
   smoothSpeed: 0.125
   verticalThreshold: 1

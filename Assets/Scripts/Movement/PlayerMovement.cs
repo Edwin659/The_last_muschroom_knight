@@ -134,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpsleft = maxJumps;
         }
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame && isAttacking == false)
+        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame || Input.GetKey(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && isAttacking == false)
         {
             Debug.Log("Jump pressed!");
             OnJump();
