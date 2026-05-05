@@ -156,11 +156,24 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        bool center = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
-        bool left = Physics2D.OverlapCircle(feetPosition.position + Vector3.left * 0.2f, groundCheckCircle, groundLayer);
-        bool right = Physics2D.OverlapCircle(feetPosition.position + Vector3.right * 0.2f, groundCheckCircle, groundLayer);
+        //bool center = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
+        //bool left = Physics2D.OverlapCircle(feetPosition.position + Vector3.left * 0.2f, groundCheckCircle, groundLayer);
+        //bool right = Physics2D.OverlapCircle(feetPosition.position + Vector3.right * 0.2f, groundCheckCircle, groundLayer);
 
-        isGrounded = center || left || right;
+        //isGrounded = center || left || right;
+
+            float checkDistance = 0.1f; // distance entre les pieds et le sol
+            bool centerHitF = Physics2D.Raycast(feetPosition.position, Vector2.down, checkDistance, groundLayer);
+            bool leftHitF = Physics2D.Raycast(feetPosition.position + Vector3.left * 0.1f, Vector2.down, checkDistance, groundLayer);
+            bool rightHitF = Physics2D.Raycast(feetPosition.position + Vector3.right * 0.1f, Vector2.down, checkDistance, groundLayer);
+
+            isGrounded = centerHitF || leftHitF || rightHitF;
+
+            // Debug visuel
+            Debug.DrawRay(feetPosition.position, Vector2.down * checkDistance, Color.red);
+            Debug.DrawRay(feetPosition.position + Vector3.left * 0.2f, Vector2.down * checkDistance, Color.red);
+            Debug.DrawRay(feetPosition.position + Vector3.right * 0.2f, Vector2.down * checkDistance, Color.red);
+
         if (isGrounded)
         {
             if (groundAlignTimer > 0f) {
