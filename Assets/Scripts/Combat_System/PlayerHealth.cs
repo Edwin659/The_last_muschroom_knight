@@ -17,13 +17,20 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         currentLife = maxLife;
         playerAnim = GetComponent<Animator>();
-        healthSlider.value = currentHealth;
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
+        }
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthSlider.value = currentHealth;
+        if (healthSlider != null)
+        {
+            healthSlider.value = currentHealth;
+        }
         if (currentHealth <= 0)
         {
             currentHealth = 0;
@@ -47,7 +54,10 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        healthSlider.value = currentHealth;
+        if (healthSlider != null)
+        {
+            healthSlider.value = currentHealth;
+        }
     }
     public void Die() {
         Debug.Log("Player is dead");

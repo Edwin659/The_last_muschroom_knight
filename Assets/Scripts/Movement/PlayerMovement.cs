@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     //For knok back
     public float KBForce;
     public float KBCounter;
-    public float KBTotalTIme;
+    public float KBTotalTime;
     public bool KnockFromRight;
 
     // Audio
@@ -68,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>(); // Parent
         playerAnim = GetComponentInChildren<Animator>(); // Children
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        KBCounter = 0f;
     }
 
     private void Update()
@@ -134,7 +135,9 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpsleft = maxJumps;
         }
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame || Input.GetKey(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) && isAttacking == false)
+        bool jumpPressed = Keyboard.current != null &&
+            (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.wKey.wasPressedThisFrame);
+        if (jumpPressed && !isAttacking)
         {
             Debug.Log("Jump pressed!");
             OnJump();
@@ -156,24 +159,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        //bool center = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
-        //bool left = Physics2D.OverlapCircle(feetPosition.position + Vector3.left * 0.2f, groundCheckCircle, groundLayer);
-        //bool right = Physics2D.OverlapCircle(feetPosition.position + Vector3.right * 0.2f, groundCheckCircle, groundLayer);
+        bool center = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
+        bool left = Physics2D.OverlapCircle(feetPosition.position + Vector3.left * 0.2f, groundCheckCircle, groundLayer);
+        bool right = Physics2D.OverlapCircle(feetPosition.position + Vector3.right * 0.2f, groundCheckCircle, groundLayer);
 
-        //isGrounded = center || left || right;
-
-            float checkDistance = 0.1f; // distance entre les pieds et le sol
-            bool centerHitF = Physics2D.Raycast(feetPosition.position, Vector2.down, checkDistance, groundLayer);
-            bool leftHitF = Physics2D.Raycast(feetPosition.position + Vector3.left * 0.1f, Vector2.down, checkDistance, groundLayer);
-            bool rightHitF = Physics2D.Raycast(feetPosition.position + Vector3.right * 0.1f, Vector2.down, checkDistance, groundLayer);
-
-            isGrounded = centerHitF || leftHitF || rightHitF;
-
-            // Debug visuel
-            Debug.DrawRay(feetPosition.position, Vector2.down * checkDistance, Color.red);
-            Debug.DrawRay(feetPosition.position + Vector3.left * 0.2f, Vector2.down * checkDistance, Color.red);
-            Debug.DrawRay(feetPosition.position + Vector3.right * 0.2f, Vector2.down * checkDistance, Color.red);
-
+        isGrounded = center || left || right;
         if (isGrounded)
         {
             if (groundAlignTimer > 0f) {
@@ -230,12 +220,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (KnockFromRight == true)//if the player is knock on the right, he moves back on left
             {
-                playerRb.linearVelocity = new Vector2(-KBForce, KBForce);
+                playerRb.linearVelocity = new Vector2(-KBForce * 0.45f, Mathf.Max(KBForce * 0.2f, 0.8f));
             }
 
             if (KnockFromRight == false)//if the player is knock on the left, he moves back on right
             {
-                playerRb.linearVelocity = new Vector2(KBForce, KBForce);
+                playerRb.linearVelocity = new Vector2(KBForce * 0.45f, Mathf.Max(KBForce * 0.2f, 0.8f));
             }
             KBCounter -= Time.deltaTime;//Times's counter before the player regains power 
         }
@@ -279,6 +269,19 @@ public class PlayerMovement : MonoBehaviour
     {
         isAttacking = false;
         Debug.Log("Attack end");
+    }
+
+    public void ApplyKnockback(bool fromRight, float forceMultiplier = 1f, float durationMultiplier = 1f)
+    {
+        KnockFromRight = fromRight;
+
+        float appliedForce = Mathf.Max(KBForce * forceMultiplier, 2f);
+        float appliedDuration = Mathf.Max(KBTotalTime * durationMultiplier, 0.1f);
+        KBCounter = appliedDuration;
+
+        float direction = fromRight ? -1f : 1f;
+        playerRb.linearVelocity = Vector2.zero;
+        playerRb.AddForce(new Vector2(direction * appliedForce, appliedForce * 0.15f), ForceMode2D.Impulse);
     }
 }
 
