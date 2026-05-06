@@ -208,26 +208,10 @@ public class PlayerMovement : MonoBehaviour
             groundAlignTimer = groundAlignDelay;
         }
 
-        //KnockBack
-        if (KBCounter <= 0)//if nothing just move
-        {
-            if (!isAttacking) // prevent movement while attacking
-            {
-                playerRb.linearVelocity = new Vector2(input * currentspeed, playerRb.linearVelocity.y);
-            }
-        }
-        else
-        {
-            if (KnockFromRight == true)//if the player is knock on the right, he moves back on left
-            {
-                playerRb.linearVelocity = new Vector2(-KBForce * 0.45f, Mathf.Max(KBForce * 0.2f, 0.8f));
-            }
 
-            if (KnockFromRight == false)//if the player is knock on the left, he moves back on right
-            {
-                playerRb.linearVelocity = new Vector2(KBForce * 0.45f, Mathf.Max(KBForce * 0.2f, 0.8f));
-            }
-            KBCounter -= Time.deltaTime;//Times's counter before the player regains power 
+        if (!isAttacking) // prevent movement while attacking
+        {
+            playerRb.linearVelocity = new Vector2(input * currentspeed, playerRb.linearVelocity.y);
         }
         if (isGrounded && input == 0)
         {

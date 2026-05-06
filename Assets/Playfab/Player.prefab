@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2950567631610755057}
   - component: {fileID: 9158704651841580294}
   - component: {fileID: 2584913165169331297}
-  - component: {fileID: 3356468407250087874}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -90,7 +89,7 @@ MonoBehaviour:
   maxJumps: 2
   KBForce: 0
   KBCounter: 0
-  KBTotalTIme: 0
+  KBTotalTime: 0
   KnockFromRight: 0
   audioSource: {fileID: 9158704651841580294}
   WalkSound: {fileID: 8300000, guid: 023ea3ddeaa8dd146b7633a0800e5a0e, type: 3}
@@ -234,23 +233,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0005944222, y: 0.16488123}
   m_Size: {x: 0.30118886, y: 0.3302431}
   m_Direction: 0
---- !u!114 &3356468407250087874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736667483217100097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d619dc9f993375c4782638b063681f1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
-  maxHealth: 100
-  maxLife: 3
-  currentLife: 0
-  currentHealth: 0
-  healthSlider: {fileID: 0}
 --- !u!1 &2599075633304488816
 GameObject:
   m_ObjectHideFlags: 0
