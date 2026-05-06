@@ -1,28 +1,42 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterDamage : MonoBehaviour
 {
-    public int damage;
-    public PlayerHealth playerHealth;
-    public PlayerMovement playerMovement;
+    public int damage = 1;
+    [SerializeField] private float damageCooldown = 1.0f;
+    private float nextDamageTime;
 
-    private void onCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        HandlePlayerHit(other);
+    }
+
+    private void HandlePlayerHit(Collider2D other)
+    {
+        if (Time.time < nextDamageTime || other == null) return;
+
+        PlayerHealth hitHealth = other.GetComponentInParent<PlayerHealth>();
+        PlayerMovement hitMovement = other.GetComponentInParent<PlayerMovement>();
+
+
+        if (hitHealth == null || hitMovement == null) return;
+        if (hitHealth.isDead) return;
+
+        Vector2 offset = other.transform.position - transform.position;
+
+        if (Mathf.Abs(offset.x) > Mathf.Abs(offset.y))
         {
-            playerMovement.KBCounter = playerMovement.KBTotalTIme;
-            if (collision.transform.position.x <= transform.position.x)
-            {
-                playerMovement.KnockFromRight = true;
-            }
-            if (collision.transform.position.x > transform.position.x)
-            {
-                playerMovement.KnockFromRight = false;
-            }
-            playerHealth.TakeDamage(damage);
+            bool knockFromRight = other.transform.position.x <= transform.position.x;
+            hitMovement.ApplyKnockback(knockFromRight, 0.45f, 0.55f);
+
+            hitHealth.TakeDamage(damage,transform);
+            nextDamageTime = Time.time + damageCooldown;
+        }
+        else
+        {
+            //jumps to see later
         }
     }
- 
 }
