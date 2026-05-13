@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem.Processors;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -10,14 +11,26 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     private Animator playerAnim;
     public Slider healthSlider;
+    public Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHealth = maxHealth;
-        currentLife = maxLife;
-        playerAnim = GetComponent<Animator>();
-        healthSlider.value = currentHealth;
+        //currentLife = maxLife;
+        Debug.Log(currentHealth);
+        rb = GetComponent<Rigidbody2D>();
+        playerAnim = GetComponentInChildren<Animator>(); // Children
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = currentHealth;
+            Debug.Log("Slider updated to " + healthSlider.value);
+        }
+        else
+        {
+            Debug.LogWarning("HealthSlider is not assigned!");
+        }
     }
 
     public void TakeDamage(int damage)
@@ -56,9 +69,14 @@ public class PlayerHealth : MonoBehaviour
     }
     public void DieEnd()
     {
-        // Game Over Scene
-        //UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
-    }
+        //Reload scene
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+
+
+    // Game Over Scene
+    //UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+}
     public void NoLife() //bonus
     {
         // Game Over Scene
