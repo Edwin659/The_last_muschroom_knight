@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.Processors;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using static Unity.VisualScripting.Member;
 
@@ -18,7 +19,6 @@ public class PlayerHealth : MonoBehaviour
     private bool canBeHit = true;
     private Rigidbody2D rb;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         isDead = false;
@@ -95,12 +95,12 @@ public class PlayerHealth : MonoBehaviour
     }
     IEnumerator HitCooldown()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         canBeHit = true;
     }
     IEnumerator HurtRoutine()
     {
-        yield return new WaitForSeconds(0.5f); // hurt time
+        yield return new WaitForSeconds(1f); // hurt time
         playerAnim.SetBool("IsHit", false);
         isHurt = false;
         canBeHit = true;
@@ -117,11 +117,12 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         }
     }
-    public void Die() {
+    public void Die()
+    {
 
         if (isDead) return;
         if (playerAnim != null)
-            playerAnim.SetTrigger("isDead");
+            playerAnim.SetTrigger("IsDead");
         isDead = true;
 
         playerAnim.SetBool("IsWalking", false);
@@ -141,7 +142,8 @@ public class PlayerHealth : MonoBehaviour
     public void DieEnd()
     {
         //Reload scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Tesr-Tiles");
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
 
         // Game Over Scene
         //UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");

@@ -153,5 +153,5 @@ MonoBehaviour:
   player: {fileID: 0}
   offset: {x: 0, y: 0, z: -10}
   upwardLook: 0.6
-  smoothSpeed: 0.8
+  smoothSpeed: 40
   verticalThreshold: 1
