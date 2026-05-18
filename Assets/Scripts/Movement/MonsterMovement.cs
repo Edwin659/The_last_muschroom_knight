@@ -20,17 +20,17 @@ public class MonsterMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isChasing;
     private float lastDistanceToPlayer;
-    private float chaseCheckTimer = 0f;
     public float chaseCheckInterval = 0.5f;
     private bool canAttack = true;
     private Rigidbody2D rb;
+    EnemyHealth health;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
-
+        health = GetComponent<EnemyHealth>();
 
         if (playerTransform == null)
         {
@@ -40,6 +40,7 @@ public class MonsterMovement : MonoBehaviour
                 playerTransform = playerObject.transform;
             }
         }
+
     }
 
     void Update()
@@ -78,6 +79,12 @@ public class MonsterMovement : MonoBehaviour
         {
             animator.SetBool("isRunning", true);
         }
+        if (health != null && health.isHurt)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            animator.SetBool("isRunning", false);
+            return;
+        };
 
         Transform targetPoint = patrolPoints[patrolDestination];
         float directionX = Mathf.Sign(targetPoint.position.x - transform.position.x);
@@ -97,6 +104,12 @@ public class MonsterMovement : MonoBehaviour
             isChasing = false;
             return;
         }
+        if (health != null && health.isHurt)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            animator.SetBool("isRunning", false);
+            return;
+        };
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
@@ -115,7 +128,7 @@ public class MonsterMovement : MonoBehaviour
             }
 
             // bunny hurt
-            if (animator.GetBool("isHurt"))
+            if (animator.GetBool("isHit"))
             {
                 // bunny hurt
                 animator.SetBool("isRunning", false);
@@ -151,23 +164,19 @@ public class MonsterMovement : MonoBehaviour
 
     void FaceTowardsX(float directionX)
     {
-        if (spriteRenderer == null)
-        {
-            return;
-        }
-
-        if (directionX > 0.01f)
-        {
-            spriteRenderer.flipX = invertFacing;
-        }
-        else if (directionX < -0.01f)
-        {
-            spriteRenderer.flipX = !invertFacing;
-        }
+        Vector3 scale = transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * (directionX > 0 ? 1 : -1);
+        transform.localScale = scale;
     }
+
     void MoveAlongGround(float directionX)
     {
-
+        if (health != null && health.isHurt)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            animator.SetBool("isRunning", false);
+            return;
+        };
         Vector2 currentVelocity = rb.linearVelocity;
         currentVelocity.x = directionX * moveSpeed;
         rb.linearVelocity = currentVelocity;
