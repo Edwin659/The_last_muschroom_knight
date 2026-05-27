@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 261382894255879523}
   - component: {fileID: 5530511303005303819}
   - component: {fileID: 5923505570125593340}
+  - component: {fileID: 559184347870724596}
+  - component: {fileID: 2975182514397424788}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -256,6 +258,7 @@ MonoBehaviour:
   healthSlider: {fileID: 956345694582387181}
   isDead: 0
   isHurt: 0
+  lifeBarController: {fileID: 0}
 --- !u!114 &5530511303005303819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +273,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDamage
   playerAnim: {fileID: 1615989544500094464}
 --- !u!61 &5923505570125593340
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736667483217100097}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.0051646233, y: 0.08999014}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.121165276, y: 0.18187237}
+  m_EdgeRadius: 0
+--- !u!114 &559184347870724596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736667483217100097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce2bd847dc18f34b8319477af2355cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDamage
+  playerAnim: {fileID: 1615989544500094464}
+--- !u!61 &2975182514397424788
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -360,6 +422,7 @@ GameObject:
   - component: {fileID: 5966283552879104655}
   - component: {fileID: 1732620897372008064}
   - component: {fileID: 6555551419407405488}
+  - component: {fileID: 4842648003838404480}
   m_Layer: 0
   m_Name: Mushroom-Idle_0
   m_TagString: Untagged
@@ -493,6 +556,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AnimationEventRelay
   playerHealth: {fileID: 261382894255879523}
 --- !u!114 &6555551419407405488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2601818928752707871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe8471fd41f123418e53fcd769bf0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationEventProxy
+--- !u!114 &4842648003838404480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -776,6 +851,14 @@ PrefabInstance:
     - target: {fileID: 6236313216713154892, guid: 84d330f3d832d3c4191cf19ba397ed63, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598042533060213992, guid: 84d330f3d832d3c4191cf19ba397ed63, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -976
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598042533060213992, guid: 84d330f3d832d3c4191cf19ba397ed63, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 602
       objectReference: {fileID: 0}
     - target: {fileID: 8553485560761103206, guid: 84d330f3d832d3c4191cf19ba397ed63, type: 3}
       propertyPath: m_Direction

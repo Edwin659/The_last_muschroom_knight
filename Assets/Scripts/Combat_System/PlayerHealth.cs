@@ -9,8 +9,6 @@ using static Unity.VisualScripting.Member;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
-    //public int maxLife = 3;
-    //public int currentLife;
     public int currentHealth;
     public Animator playerAnim;
     public Slider healthSlider;
@@ -18,12 +16,12 @@ public class PlayerHealth : MonoBehaviour
     public bool isHurt;
     private bool canBeHit = true;
     private Rigidbody2D rb;
+    public LifeBarController lifeBarController;
 
     void Start()
     {
         isDead = false;
         currentHealth = maxHealth;
-        //currentLife = maxLife;
         rb = GetComponent<Rigidbody2D>();
         playerAnim = GetComponentInChildren<Animator>(); // Children
         if (healthSlider != null)
@@ -48,16 +46,6 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = 0;
             Die();
             return;
-            //Bonus if time (health = checkpoints) (life= level)
-            //currentLife--;
-            //if (currentLife <= 0){
-            //NoLife();
-            //}
-            //else
-            //{
-            //UI at the begining 
-            //UnityEngine.SceneManagement.SceneManager.LoadScene("");
-            //}
         }
         else
         {
@@ -119,38 +107,69 @@ public class PlayerHealth : MonoBehaviour
     }
     public void Die()
     {
-
+        Debug.Log("Die() called");
         if (isDead) return;
+        isDead = true;
+
         if (playerAnim != null)
             playerAnim.SetTrigger("IsDead");
-        isDead = true;
 
         playerAnim.SetBool("IsWalking", false);
         playerAnim.SetBool("IsRunning", false);
         GetComponent<PlayerMovement>().enabled = false; // stop movement
-        //GetComponent<PlayerAttack>().enabled = false;
 
-        GetComponent<Collider2D>().enabled = false; //stop collider
-        playerAnim.SetTrigger("IsDead");
+
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
             rb.simulated = false;
         }
+
         Debug.Log("Player is dead");
+
+        Debug.Log(LifeBarController.instance);
+        if (LifeBarController.instance != null)
+        {
+            LifeBarController.instance.currentLives--;
+            Debug.Log(LifeBarController.instance.currentLives);
+
+            if (LifeBarController.instance.currentLives <= 0)
+            {
+                NoLife(); // Game Over
+            }
+            else
+            {
+                DieEnd(); // reload scene
+            }
+        }
     }
     public void DieEnd()
     {
+        StartCoroutine(ReloadSceneAfterDelay(1f));
+    }
+
+    IEnumerator ReloadSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         //Reload scene
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.name);
-
-        // Game Over Scene
-        //UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
     }
     public void NoLife() //bonus
     {
-        // Game Over Scene
-        //UnityEngine.SceneManagement.SceneManager.LoadScene("GameOverScene");
+        Debug.Log("GAME OVER");
+
+        // Save curret scene
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("LastScene", currentSceneName);
+
+        //No blak heart
+        if (LifeBarController.instance != null)
+        {
+            Destroy(LifeBarController.instance.gameObject);
+            LifeBarController.instance = null;
+        }
+        //GameOver
+        SceneManager.LoadScene("GameOverScene");
     }
 }
