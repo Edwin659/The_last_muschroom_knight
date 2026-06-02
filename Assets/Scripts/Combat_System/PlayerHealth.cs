@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
     private bool canBeHit = true;
     private Rigidbody2D rb;
     public LifeBarController lifeBarController;
+    public Transform deathZone;
 
     void Start()
     {
@@ -30,6 +31,15 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("KillZone"))
+        {
+            currentHealth = 0;
+            Die(true); // withou animation
+        }
+    }
+
 
     public void TakeDamage(int damage, Transform source)
     {
@@ -105,19 +115,18 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         }
     }
-    public void Die()
+    public void Die(bool skipAnimation = false)
     {
-        Debug.Log("Die() called");
         if (isDead) return;
         isDead = true;
 
-        if (playerAnim != null)
+        if (!skipAnimation && playerAnim != null)
             playerAnim.SetTrigger("IsDead");
 
+        //Stop movement
         playerAnim.SetBool("IsWalking", false);
         playerAnim.SetBool("IsRunning", false);
         GetComponent<PlayerMovement>().enabled = false; // stop movement
-
 
         if (rb != null)
         {
@@ -125,9 +134,7 @@ public class PlayerHealth : MonoBehaviour
             rb.simulated = false;
         }
 
-        Debug.Log("Player is dead");
-
-        Debug.Log(LifeBarController.instance);
+        //LifeBar
         if (LifeBarController.instance != null)
         {
             LifeBarController.instance.currentLives--;
@@ -139,13 +146,23 @@ public class PlayerHealth : MonoBehaviour
             }
             else
             {
-                DieEnd(); // reload scene
+                DieEnd(skipAnimation); // reload scene
             }
         }
     }
-    public void DieEnd()
+    public void DieEnd(bool skipAnimation)
     {
-        StartCoroutine(ReloadSceneAfterDelay(1f));
+        if (skipAnimation)
+        {
+            // Reload immédiat
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.name);
+        }
+        else
+        {
+            // Reload avec délai (mort normale avec animation)
+            StartCoroutine(ReloadSceneAfterDelay(1f));
+        }
     }
 
     IEnumerator ReloadSceneAfterDelay(float delay)

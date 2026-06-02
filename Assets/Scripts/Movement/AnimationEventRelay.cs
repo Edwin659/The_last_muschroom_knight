@@ -8,7 +8,7 @@ public class AnimationEventRelay : MonoBehaviour
     {
         if (playerHealth != null)
         {
-            playerHealth.DieEnd();
+            playerHealth.DieEnd(false);
         }
     }
 }
