@@ -129,10 +129,8 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 8, y: 7}
-        - {x: 7, y: 7}
-        - {x: -7, y: -7}
-        - {x: -7, y: -8}
+      - - {x: 8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -156,11 +154,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 7, y: -7}
-        - {x: -7, y: 7}
-        - {x: -8, y: 7}
+      - - {x: 8, y: -8}
+        - {x: -8, y: 8}
         - {x: -8, y: -8}
-        - {x: 7, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: 3d3667fd3d478b5f0800000000000000
@@ -290,11 +286,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 7, y: -7}
-        - {x: -7, y: 7}
-        - {x: -8, y: 7}
+      - - {x: 8, y: -8}
+        - {x: -8, y: 8}
         - {x: -8, y: -8}
-        - {x: 7, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: 74bb6bc12a54b52429a9acd0fd02c040
@@ -317,10 +311,8 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 8, y: 7}
-        - {x: 7, y: 7}
-        - {x: -7, y: -7}
-        - {x: -7, y: -8}
+      - - {x: 8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -397,10 +389,8 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 8, y: 7}
-        - {x: 7, y: 7}
-        - {x: -7, y: -7}
-        - {x: -7, y: -8}
+      - - {x: 8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
@@ -424,11 +414,9 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape:
-      - - {x: 7, y: -7}
-        - {x: -7, y: 7}
-        - {x: -8, y: 7}
+      - - {x: -8, y: 8}
         - {x: -8, y: -8}
-        - {x: 7, y: -8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: 4399c749baed5ad47885035db2149e59

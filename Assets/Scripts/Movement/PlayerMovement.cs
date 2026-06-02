@@ -36,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
 
     //Animation
     private Animator playerAnim;
-    // private float lastSlopeAngle = 0f;
     private Vector2 previousNormal = Vector2.up;
 
 
@@ -73,6 +72,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        PlayerHealth health = GetComponent<PlayerHealth>();
+        if (health != null && health.isHurt)
+        {
+            input = 0; // no mouvement
+            playerAnim.SetBool("IsWalking", false);
+            playerAnim.SetBool("IsRunning", false);
+            playerRb.linearVelocity = new Vector2(0, playerRb.linearVelocity.y);
+        }
         if (isAttacking)
         {
             input = 0;
@@ -80,6 +87,21 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             input = Input.GetAxisRaw("Horizontal");
+        }
+
+        if (input != 0 && !isAttacking)
+        {
+            playerAnim.SetBool("IsWalking", true);
+
+            if (isGrounded && !playerAnim.GetBool("IsRunning"))
+            {
+                if (!audioSource.isPlaying)
+                    audioSource.PlayOneShot(WalkSound);
+            }
+        }
+        else
+        {
+            playerAnim.SetBool("IsWalking", false);
         }
 
         //Run
@@ -101,25 +123,7 @@ public class PlayerMovement : MonoBehaviour
             audioSource.pitch = 1.5f;
         }
 
-        //Walk
-        if (!isAttacking)
-        {
-            if (input != 0)
-            {
-                playerAnim.SetBool("IsWalking", true);
-
-                if (isGrounded && !playerAnim.GetBool("IsRunning"))
-                {
-                    if (!audioSource.isPlaying)
-                        audioSource.PlayOneShot(WalkSound);
-                }
-            }
-            else
-            {
-                playerAnim.SetBool("IsWalking", false);
-            }
-        }
-
+        //Flip
         if (input < 0)//left
         {
             spriteRenderer.flipX = false;
@@ -130,18 +134,18 @@ public class PlayerMovement : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
-            //jump
+         //jump
         if (isGrounded && playerRb.linearVelocity.y<=0.1f)
         {
             jumpsleft = maxJumps;
         }
         bool jumpPressed = Keyboard.current != null &&
-            (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.wKey.wasPressedThisFrame);
+            (Keyboard.current.spaceKey.wasPressedThisFrame || Keyboard.current.wKey.wasPressedThisFrame || UnityEngine.Input.GetKey(KeyCode.UpArrow));
         if (jumpPressed && !isAttacking)
         {
-            Debug.Log("Jump pressed!");
             OnJump();
         }
+
         //Landing
         if (!wasGrounded && isGrounded && playerRb.linearVelocity.y <= 0.1f)
         {
@@ -159,6 +163,14 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        PlayerHealth health = GetComponent<PlayerHealth>();
+        if (health != null && health.isHurt)
+        {
+            // stoppe net le mouvement horizontal
+            playerRb.linearVelocity = new Vector2(0, playerRb.linearVelocity.y);
+            return;
+        }
+
         bool center = Physics2D.OverlapCircle(feetPosition.position, groundCheckCircle, groundLayer);
         bool left = Physics2D.OverlapCircle(feetPosition.position + Vector3.left * 0.2f, groundCheckCircle, groundLayer);
         bool right = Physics2D.OverlapCircle(feetPosition.position + Vector3.right * 0.2f, groundCheckCircle, groundLayer);
@@ -208,26 +220,10 @@ public class PlayerMovement : MonoBehaviour
             groundAlignTimer = groundAlignDelay;
         }
 
-        //KnockBack
-        if (KBCounter <= 0)//if nothing just move
-        {
-            if (!isAttacking) // prevent movement while attacking
-            {
-                playerRb.linearVelocity = new Vector2(input * currentspeed, playerRb.linearVelocity.y);
-            }
-        }
-        else
-        {
-            if (KnockFromRight == true)//if the player is knock on the right, he moves back on left
-            {
-                playerRb.linearVelocity = new Vector2(-KBForce * 0.45f, Mathf.Max(KBForce * 0.2f, 0.8f));
-            }
 
-            if (KnockFromRight == false)//if the player is knock on the left, he moves back on right
-            {
-                playerRb.linearVelocity = new Vector2(KBForce * 0.45f, Mathf.Max(KBForce * 0.2f, 0.8f));
-            }
-            KBCounter -= Time.deltaTime;//Times's counter before the player regains power 
+        if (!isAttacking) // prevent movement while attacking
+        {
+            playerRb.linearVelocity = new Vector2(input * currentspeed, playerRb.linearVelocity.y);
         }
         if (isGrounded && input == 0)
         {
@@ -247,10 +243,6 @@ public class PlayerMovement : MonoBehaviour
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpsleft--;
             transform.rotation = Quaternion.identity;
-        }
-        else
-        {
-            Debug.Log("No jumps left " + jumpsleft);
         }
     }
     public void Attack()
