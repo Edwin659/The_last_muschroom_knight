@@ -117,6 +117,15 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         }
     }
+    public void KillInstant()
+    {
+        if (isDead) return;
+        currentHealth = 0;
+        if (healthSlider != null)
+            healthSlider.value = 0;
+        Die();
+    }
+
     public void Die()
     {
 
