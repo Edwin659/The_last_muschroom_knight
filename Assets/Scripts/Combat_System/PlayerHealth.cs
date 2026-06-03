@@ -115,6 +115,15 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         }
     }
+    public void KillInstant()//Spike no kill instant just loose pv
+    {
+        if (isDead) return;
+        currentHealth = 0;
+        if (healthSlider != null)
+            healthSlider.value = 0;
+        Die();
+    }
+
     public void Die(bool skipAnimation = false)
     {
         if (isDead) return;
@@ -154,13 +163,13 @@ public class PlayerHealth : MonoBehaviour
     {
         if (skipAnimation)
         {
-            // Reload immédiat
+            // Reload immï¿½diat
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.name);
         }
         else
         {
-            // Reload avec délai (mort normale avec animation)
+            // Reload avec dï¿½lai (mort normale avec animation)
             StartCoroutine(ReloadSceneAfterDelay(1f));
         }
     }
