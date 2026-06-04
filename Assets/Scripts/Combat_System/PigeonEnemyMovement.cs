@@ -35,9 +35,6 @@ public class PigeonEnemyMovement : MonoBehaviour
             if (playerObject != null)
                 playerTransform = playerObject.transform;
         }
-
-        if (animator != null)
-            animator.SetBool("isFlying", true);
     }
 
     void Update()
@@ -50,16 +47,6 @@ public class PigeonEnemyMovement : MonoBehaviour
             HoverAtHome();
             return;
         }
-
-        if (health != null && health.isHurt)
-        {
-            if (animator != null)
-                animator.SetBool("isFlying", false);
-            return;
-        }
-
-        if (animator != null)
-            animator.SetBool("isFlying", true);
 
         float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
         float playerDistanceFromHome = Vector2.Distance(playerTransform.position, homePosition);
@@ -109,9 +96,6 @@ public class PigeonEnemyMovement : MonoBehaviour
         PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
         if (playerHealth != null && playerHealth.isHurt)
             return;
-
-        if (animator != null)
-            animator.SetTrigger("isAttacking");
 
         nextAttackTime = Time.time + attackCooldown;
     }
