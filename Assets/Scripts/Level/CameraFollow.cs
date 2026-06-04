@@ -2,59 +2,39 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform player;      // Player
-    public Vector3 offset;        // Camera
-    public float upwardLook = 0.5f; // Extra height above player
-    public float smoothSpeed = 0.8f; // Smoothing speed
+    public Transform player;
+    public Vector3 offset;
+    public float upwardLook = 0.5f;
+    public float smoothSpeed = 0.8f;
 
-    public Transform leftBoundary;
-    public Transform rightBoundary;
+    public BoxCollider2D leftBoundary;
+    public BoxCollider2D rightBoundary;
 
-    void Awake()
-    {
-        if (player == null)
-        {
-            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-            if (playerObject != null)
-            {
-                player = playerObject.transform;
-            }
-        }
-    }
+    private float camHalfHeight;
+    private float camHalfWidth;
 
-    void Start()
-    {
-        if (player != null)
-        {
-            transform.position = player.position + offset + Vector3.up * upwardLook;
-        }
-    }
-   
-    // Verticals Limits
     void LateUpdate()
     {
-
         if (player == null) return;
+
+        // Taille fixe de la caméra
+        camHalfHeight = Camera.main.orthographicSize;
+        camHalfWidth = camHalfHeight * (16f / 9f); // ratio forcé 16:9
 
         // Position cible centrée sur le joueur
         float targetX = player.position.x + offset.x;
         float targetY = player.position.y + offset.y + upwardLook;
 
-        float camHalfWidth = Camera.main.orthographicSize * Camera.main.aspect;
-
-        // Clamp en tenant compte de la largeur de la caméra
-        targetX = Mathf.Clamp(
-            targetX,
-            leftBoundary.position.x + camHalfWidth,
-            rightBoundary.position.x - camHalfWidth
-        );
-
         Vector3 desiredPosition = new Vector3(targetX, targetY, offset.z);
 
-        transform.position = Vector3.Lerp(
-            transform.position,
-            desiredPosition,
-            smoothSpeed * Time.deltaTime * 60f);
+        // Limites calculées à partir des colliders
+        float minX = leftBoundary.bounds.max.x + camHalfWidth;
+        float maxX = rightBoundary.bounds.min.x - camHalfWidth;
+
+        float clampedX = Mathf.Clamp(desiredPosition.x, minX, maxX);
+
+        Vector3 finalPosition = new Vector3(clampedX, targetY, desiredPosition.z);
+
+        transform.position = Vector3.Lerp(transform.position, finalPosition, smoothSpeed * Time.deltaTime * 60f);
     }
 }
-

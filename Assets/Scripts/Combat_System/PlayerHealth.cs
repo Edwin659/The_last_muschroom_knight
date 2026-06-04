@@ -40,7 +40,6 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-
     public void TakeDamage(int damage, Transform source)
     {
         if (!canBeHit || isDead) return;
@@ -115,6 +114,16 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         }
     }
+    public void KillInstant()
+    {
+        if (isDead) return;
+        currentHealth = 0;
+        if (healthSlider != null)
+            healthSlider.value = 0;
+
+        Die();
+    }
+
     public void Die(bool skipAnimation = false)
     {
         if (isDead) return;
@@ -154,13 +163,13 @@ public class PlayerHealth : MonoBehaviour
     {
         if (skipAnimation)
         {
-            // Reload immédiat
+            // Reload immediat
             Scene currentScene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(currentScene.name);
         }
         else
         {
-            // Reload avec délai (mort normale avec animation)
+            // Reload with delay
             StartCoroutine(ReloadSceneAfterDelay(1f));
         }
     }
@@ -176,11 +185,11 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("GAME OVER");
 
-        // Save curret scene
+        // Save current scene
         string currentSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetString("LastScene", currentSceneName);
 
-        //No blak heart
+        //No black heart
         if (LifeBarController.instance != null)
         {
             Destroy(LifeBarController.instance.gameObject);

@@ -34,9 +34,5 @@ public class MonsterDamage : MonoBehaviour
             hitHealth.TakeDamage(damage,transform);
             nextDamageTime = Time.time + damageCooldown;
         }
-        else
-        {
-            //jumps to see later
-        }
     }
 }
