@@ -8,6 +8,9 @@ TagManager:
   - Bunny
   - KillZone
   - Pidgeon
+  - Coin
+  - HealthGain
+  - Bullet
   layers:
   - Default
   - TransparentFX
