@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MonsterDamage : MonoBehaviour
 {
@@ -17,26 +15,25 @@ public class MonsterDamage : MonoBehaviour
     {
         if (Time.time < nextDamageTime || other == null) return;
 
+        SquirrelBossAI boss = GetComponent<SquirrelBossAI>();
+        if (boss != null && !boss.IsCharging())
+            return;
+
         PlayerHealth hitHealth = other.GetComponentInParent<PlayerHealth>();
         PlayerMovement hitMovement = other.GetComponentInParent<PlayerMovement>();
-
 
         if (hitHealth == null || hitMovement == null) return;
         if (hitHealth.isDead) return;
 
         Vector2 offset = other.transform.position - transform.position;
 
+        // Only side contact damages the player (vertical overlap allows jump-stomp).
         if (Mathf.Abs(offset.x) > Mathf.Abs(offset.y))
         {
             bool knockFromRight = other.transform.position.x <= transform.position.x;
             hitMovement.ApplyKnockback(knockFromRight, 0.45f, 0.55f);
-
-            hitHealth.TakeDamage(damage,transform);
+            hitHealth.TakeDamage(damage, transform);
             nextDamageTime = Time.time + damageCooldown;
-        }
-        else
-        {
-            //jumps to see later
         }
     }
 }

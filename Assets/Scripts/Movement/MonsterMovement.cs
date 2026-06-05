@@ -116,6 +116,9 @@ public class MonsterMovement : MonoBehaviour
         // Case 1 : attack
         if (distanceToPlayer <= attackDistance)
         {
+            if (!canAttack)
+                return;
+
             //player hurt ?
             PlayerHealth playerHealth = playerTransform.GetComponent<PlayerHealth>();
             if (playerHealth != null && playerHealth.isHurt)

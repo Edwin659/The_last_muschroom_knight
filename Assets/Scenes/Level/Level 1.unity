@@ -33539,6 +33539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDamage
   playerAnim: {fileID: 1001738075}
+  stompBounce: 5
 --- !u!61 &757417139
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33918,9 +33919,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4463356009532401427, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4752776580343210554, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
       propertyPath: m_Name
       value: BunnyIdle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158982862318184342, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5483338781230664287, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41252,6 +41261,26 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 665458129}
+    - target: {fileID: 8800000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41290,6 +41319,26 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 665458129}
+    - target: {fileID: 8800000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8800000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8900000000000000001, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
