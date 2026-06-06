@@ -116,10 +116,10 @@ TextureImporter:
       name: player-jump-preview_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 1
-        width: 36
-        height: 35
+        x: 21
+        y: 2
+        width: 34
+        height: 34
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
