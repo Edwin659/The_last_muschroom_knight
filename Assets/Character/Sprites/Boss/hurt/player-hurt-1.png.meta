@@ -116,10 +116,10 @@ TextureImporter:
       name: player-hurt-1_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 12
-        width: 30
-        height: 34
+        x: 30
+        y: 13
+        width: 28
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

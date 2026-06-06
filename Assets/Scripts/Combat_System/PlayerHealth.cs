@@ -45,7 +45,7 @@ public class PlayerHealth : MonoBehaviour
         if (other.CompareTag("KillZone"))
         {
             currentHealth = 0;
-            Die(true); // withou animation
+            Die(true); // withouts animation
         }
     }
 
@@ -83,7 +83,7 @@ public class PlayerHealth : MonoBehaviour
         invincibilityRoutine = StartCoroutine(InvincibilityRoutine(source));
     }
 
-    // --- Holy grail: 1.5s invincibility + sprite flash after any hit ---
+    //1.5s invincibility + sprite flash after any hit
     private IEnumerator InvincibilityRoutine(Transform source)
     {
         Collider2D sourceCollider = source != null ? source.GetComponent<Collider2D>() : null;
@@ -123,14 +123,16 @@ public class PlayerHealth : MonoBehaviour
         invincibilityRoutine = null;
     }
 
-    public void Heal(int healing)
+    public void RestoreFullHealth()
     {
-        currentHealth += healing;
-        if (currentHealth >= maxHealth)
-            currentHealth = maxHealth;
+        currentHealth = maxHealth;
 
         if (healthSlider != null)
             healthSlider.value = currentHealth;
+        if (LifeBarController.instance != null)
+            LifeBarController.instance.currentLives = 3;
+        isHurt = false;
+        canBeHit = true;
     }
 
     public void KillInstant()
@@ -181,7 +183,6 @@ public class PlayerHealth : MonoBehaviour
         if (LifeBarController.instance != null)
         {
             LifeBarController.instance.currentLives--;
-            Debug.Log(LifeBarController.instance.currentLives);
 
             if (LifeBarController.instance.currentLives <= 0)
             {
@@ -212,6 +213,8 @@ public class PlayerHealth : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         //Reload scene
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 
     public void NoLife()

@@ -116,12 +116,12 @@ TextureImporter:
       name: player-idle-4_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 9
-        width: 24
-        height: 27
+        x: 33
+        y: 10
+        width: 22
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4aefb44815d93334fad15160b4d1a8e9
     internalID: 0
     vertices: []
     indices: 

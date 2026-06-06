@@ -116,10 +116,10 @@ TextureImporter:
       name: player-run-3_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 56
-        height: 27
+        x: 9
+        y: 10
+        width: 54
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

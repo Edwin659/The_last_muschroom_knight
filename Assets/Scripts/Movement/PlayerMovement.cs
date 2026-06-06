@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -69,6 +71,26 @@ public class PlayerMovement : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         KBCounter = 0f;
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Coin"))
+        {
+            CoinUIManager.instance.AddCoin();
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("HealthGain"))
+        {
+            PlayerHealth health = GetComponent<PlayerHealth>();
+            if (health != null)
+            {
+                health.RestoreFullHealth();
+            }
+            Destroy(other.gameObject);
+        }
+    }
+
+
 
     private void Update()
     {
@@ -251,7 +273,6 @@ public class PlayerMovement : MonoBehaviour
         playerAnim.SetTrigger("IsAttacking");
         playerRb.linearVelocity = Vector2.zero;
         Invoke("PlayAttackSound", 0.7f);
-        
     }
     void PlayAttackSound()
     {

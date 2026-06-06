@@ -40,7 +40,6 @@ public class MonsterMovement : MonoBehaviour
                 playerTransform = playerObject.transform;
             }
         }
-
     }
 
     void Update()

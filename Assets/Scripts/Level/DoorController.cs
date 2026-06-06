@@ -44,7 +44,7 @@ public class DoorController : MonoBehaviour
                 break;
 
             case LevelType.Level1:
-                if (coinsCollected >= coinsRequired)
+                if (CoinUIManager.instance.GetCoinCount() >= coinsRequired)
                     ShowOverlay("Level 1 Fini, passage au level 2", nextLevelName2);
                 break;
         }
