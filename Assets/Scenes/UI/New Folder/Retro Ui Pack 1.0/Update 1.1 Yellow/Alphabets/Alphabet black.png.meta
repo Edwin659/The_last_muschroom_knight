@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: f96c15174541b9b47820dbdbdca55498
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1507761077705788346
+    second: Alphabet black_0
+  - first:
+      213: 3312664134451395270
+    second: Alphabet black_1
+  - first:
+      213: -1068670222117417841
+    second: Alphabet black_2
+  - first:
+      213: -4074783634170585178
+    second: Alphabet black_3
+  - first:
+      213: -8118183083982235352
+    second: Alphabet black_4
+  - first:
+      213: 2752469095259792937
+    second: Alphabet black_5
+  - first:
+      213: 1137254917110361019
+    second: Alphabet black_6
+  - first:
+      213: 4982061808338061819
+    second: Alphabet black_7
+  - first:
+      213: -4603742978120858778
+    second: Alphabet black_8
+  - first:
+      213: -1152295368843562229
+    second: Alphabet black_9
+  - first:
+      213: -6996804948413029574
+    second: Alphabet black_10
+  - first:
+      213: -7329088733027745528
+    second: Alphabet black_11
+  - first:
+      213: -4814958921119524228
+    second: Alphabet black_12
+  - first:
+      213: -3594809212759298723
+    second: Alphabet black_13
+  - first:
+      213: -4005132301817997291
+    second: Alphabet black_14
+  - first:
+      213: -2887227940201005045
+    second: Alphabet black_15
+  - first:
+      213: 438494587775367548
+    second: Alphabet black_16
+  - first:
+      213: 7649682176964433895
+    second: Alphabet black_17
+  - first:
+      213: -1406213388976582162
+    second: Alphabet black_18
+  - first:
+      213: 5719225731510772827
+    second: Alphabet black_19
+  - first:
+      213: 3990809060487974148
+    second: Alphabet black_20
+  - first:
+      213: 4412466789794561103
+    second: Alphabet black_21
+  - first:
+      213: 1785697364444490715
+    second: Alphabet black_22
+  - first:
+      213: -6826313629907009329
+    second: Alphabet black_23
+  - first:
+      213: 6110921859304441213
+    second: Alphabet black_24
+  - first:
+      213: -1864425334582363594
+    second: Alphabet black_25
+  - first:
+      213: 1228633275122963777
+    second: Alphabet black_26
+  - first:
+      213: 6669857136807355425
+    second: Alphabet black_27
+  - first:
+      213: 2396509701656001659
+    second: Alphabet black_28
+  - first:
+      213: 1398505922364712871
+    second: Alphabet black_29
+  - first:
+      213: -8446062435969591387
+    second: Alphabet black_30
+  - first:
+      213: 7852444992692775141
+    second: Alphabet black_31
+  - first:
+      213: -4342930259979727682
+    second: Alphabet black_32
+  - first:
+      213: 3332028399497927303
+    second: Alphabet black_33
+  - first:
+      213: 5398728064609451124
+    second: Alphabet black_34
+  - first:
+      213: -8822241057851581263
+    second: Alphabet black_35
+  - first:
+      213: -4734089988150136731
+    second: Alphabet black_36
+  - first:
+      213: -5512287593966622795
+    second: Alphabet black_37
+  - first:
+      213: 4503821017094194390
+    second: Alphabet black_38
+  - first:
+      213: -8419041735837475036
+    second: Alphabet black_39
+  - first:
+      213: 371447581553163254
+    second: Alphabet black_40
+  - first:
+      213: 1397796009034565907
+    second: Alphabet black_41
+  - first:
+      213: -7801847293171610357
+    second: Alphabet black_42
+  - first:
+      213: 6206190760930079247
+    second: Alphabet black_43
+  - first:
+      213: -6455662247236210076
+    second: Alphabet black_44
+  - first:
+      213: -9139986092997212210
+    second: Alphabet black_45
+  - first:
+      213: 8528636715612762410
+    second: Alphabet black_46
+  - first:
+      213: -8041034078642718207
+    second: Alphabet black_47
+  - first:
+      213: 3790148400080349490
+    second: Alphabet black_48
+  - first:
+      213: 2560133667208371889
+    second: Alphabet black_49
+  - first:
+      213: -1026239956177638467
+    second: Alphabet black_50
+  - first:
+      213: -381390102371806959
+    second: Alphabet black_51
+  - first:
+      213: -6692090866820601369
+    second: Alphabet black_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alphabet black_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644bf2dc94b531be0800000000000000
+      internalID: -1507761077705788346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caf622aa72f8fd20800000000000000
+      internalID: 3312664134451395270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 39
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c47a458125b21f0800000000000000
+      internalID: -1068670222117417841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afdfa4bfd57377c0800000000000000
+      internalID: -4074783634170585178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 39
+        width: 107
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82957a14f7b665f80800000000000000
+      internalID: -8118183083982235352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 39
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92663361f0cb23620800000000000000
+      internalID: 2752469095259792937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbed69525758cf00800000000000000
+      internalID: 1137254917110361019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 47
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9c70f81d6d32540800000000000000
+      internalID: 4982061808338061819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66348ef27283c10c0800000000000000
+      internalID: -4603742978120858778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0370c797793200f0800000000000000
+      internalID: -1152295368843562229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33652758fa56ee90800000000000000
+      internalID: -6996804948413029574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 14
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8014094e0a8d94a90800000000000000
+      internalID: -7329088733027745528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a929a3f54dd2db0800000000000000
+      internalID: -4814958921119524228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 5
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d2e2e211cac1ec0800000000000000
+      internalID: -3594809212759298723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51812bf3469ea68c0800000000000000
+      internalID: -4005132301817997291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b008cbe4c718ee7d0800000000000000
+      internalID: -2887227940201005045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79384c1188d51600800000000000000
+      internalID: 438494587775367548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e71a920961292a60800000000000000
+      internalID: 7649682176964433895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee117a78f502c7ce0800000000000000
+      internalID: -1406213388976582162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5429f44085ce5f40800000000000000
+      internalID: 5719225731510772827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_20
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 5
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40dcbc042b3326730800000000000000
+      internalID: 3990809060487974148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4cb9e4ca2b3c3d30800000000000000
+      internalID: 4412466789794561103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 5
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdba01cba4218c810800000000000000
+      internalID: 1785697364444490715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_23
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc04cf3cbef0441a0800000000000000
+      internalID: -6826313629907009329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_24
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75c202dd0b5ec450800000000000000
+      internalID: 6110921859304441213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 4
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63abafd490b3026e0800000000000000
+      internalID: -1864425334582363594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_26
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 5
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145dde2447bfc0110800000000000000
+      internalID: 1228633275122963777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_27
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124a10e3ab7109c50800000000000000
+      internalID: 6669857136807355425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7cbbfb50ec124120800000000000000
+      internalID: 2396509701656001659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_29
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a724de0abd786310800000000000000
+      internalID: 1398505922364712871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_30
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a71341b6fe89ca80800000000000000
+      internalID: -8446062435969591387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e86fb7ed1d79fc60800000000000000
+      internalID: 7852444992692775141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_32
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc0d9930ffcab3c0800000000000000
+      internalID: -4342930259979727682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_33
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a569dec2ebd3e20800000000000000
+      internalID: 3332028399497927303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_34
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c7af132922cea40800000000000000
+      internalID: 5398728064609451124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_35
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bcd3e7008a119580800000000000000
+      internalID: -8822241057851581263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560f391fc322d4eb0800000000000000
+      internalID: -4734089988150136731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_37
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b7a3dd73ab6083b0800000000000000
+      internalID: -5512287593966622795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_38
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d486df4a59c08e30800000000000000
+      internalID: 4503821017094194390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_39
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42f1832b52e892b80800000000000000
+      internalID: -8419041735837475036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb772f7b95a72500800000000000000
+      internalID: 371447581553163254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_41
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319c6fa7018f56310800000000000000
+      internalID: 1397796009034565907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_42
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0dc9aa09354ab390800000000000000
+      internalID: -7801847293171610357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 5
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f027c818d91d02650800000000000000
+      internalID: 6206190760930079247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_44
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462f593c361e866a0800000000000000
+      internalID: -6455662247236210076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_45
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 5
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec704eaf21f382180800000000000000
+      internalID: -9139986092997212210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_46
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21f37cf7edcb5670800000000000000
+      internalID: 8528636715612762410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_47
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ab0b3db12886090800000000000000
+      internalID: -8041034078642718207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_48
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239edc883ef499430800000000000000
+      internalID: 3790148400080349490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_49
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be1973910c678320800000000000000
+      internalID: 2560133667208371889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_50
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 5
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb28b5723012c1f0800000000000000
+      internalID: -1026239956177638467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_51
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 111574bf8b705baf0800000000000000
+      internalID: -381390102371806959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet black_52
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 5
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9a58610dae023a0800000000000000
+      internalID: -6692090866820601369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alphabet black_0: -1507761077705788346
+      Alphabet black_1: 3312664134451395270
+      Alphabet black_10: -6996804948413029574
+      Alphabet black_11: -7329088733027745528
+      Alphabet black_12: -4814958921119524228
+      Alphabet black_13: -3594809212759298723
+      Alphabet black_14: -4005132301817997291
+      Alphabet black_15: -2887227940201005045
+      Alphabet black_16: 438494587775367548
+      Alphabet black_17: 7649682176964433895
+      Alphabet black_18: -1406213388976582162
+      Alphabet black_19: 5719225731510772827
+      Alphabet black_2: -1068670222117417841
+      Alphabet black_20: 3990809060487974148
+      Alphabet black_21: 4412466789794561103
+      Alphabet black_22: 1785697364444490715
+      Alphabet black_23: -6826313629907009329
+      Alphabet black_24: 6110921859304441213
+      Alphabet black_25: -1864425334582363594
+      Alphabet black_26: 1228633275122963777
+      Alphabet black_27: 6669857136807355425
+      Alphabet black_28: 2396509701656001659
+      Alphabet black_29: 1398505922364712871
+      Alphabet black_3: -4074783634170585178
+      Alphabet black_30: -8446062435969591387
+      Alphabet black_31: 7852444992692775141
+      Alphabet black_32: -4342930259979727682
+      Alphabet black_33: 3332028399497927303
+      Alphabet black_34: 5398728064609451124
+      Alphabet black_35: -8822241057851581263
+      Alphabet black_36: -4734089988150136731
+      Alphabet black_37: -5512287593966622795
+      Alphabet black_38: 4503821017094194390
+      Alphabet black_39: -8419041735837475036
+      Alphabet black_4: -8118183083982235352
+      Alphabet black_40: 371447581553163254
+      Alphabet black_41: 1397796009034565907
+      Alphabet black_42: -7801847293171610357
+      Alphabet black_43: 6206190760930079247
+      Alphabet black_44: -6455662247236210076
+      Alphabet black_45: -9139986092997212210
+      Alphabet black_46: 8528636715612762410
+      Alphabet black_47: -8041034078642718207
+      Alphabet black_48: 3790148400080349490
+      Alphabet black_49: 2560133667208371889
+      Alphabet black_5: 2752469095259792937
+      Alphabet black_50: -1026239956177638467
+      Alphabet black_51: -381390102371806959
+      Alphabet black_52: -6692090866820601369
+      Alphabet black_6: 1137254917110361019
+      Alphabet black_7: 4982061808338061819
+      Alphabet black_8: -4603742978120858778
+      Alphabet black_9: -1152295368843562229
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

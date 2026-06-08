@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: fdd0ccbc8c4c1e84b8ca4d5cc6bae607
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6844469130782160974
+    second: Alphabet yellow_0
+  - first:
+      213: -4178795924544896283
+    second: Alphabet yellow_1
+  - first:
+      213: -8309295339511133826
+    second: Alphabet yellow_2
+  - first:
+      213: 4591256345491787474
+    second: Alphabet yellow_3
+  - first:
+      213: 4361173567975180033
+    second: Alphabet yellow_4
+  - first:
+      213: -3480696255199525596
+    second: Alphabet yellow_5
+  - first:
+      213: -491084525188510927
+    second: Alphabet yellow_6
+  - first:
+      213: 568513436728573606
+    second: Alphabet yellow_7
+  - first:
+      213: -7652822603694231039
+    second: Alphabet yellow_8
+  - first:
+      213: -481504844394559770
+    second: Alphabet yellow_9
+  - first:
+      213: -7274926218173276944
+    second: Alphabet yellow_10
+  - first:
+      213: -1811997984829701552
+    second: Alphabet yellow_11
+  - first:
+      213: 2254175846370613354
+    second: Alphabet yellow_12
+  - first:
+      213: -20064810362710785
+    second: Alphabet yellow_13
+  - first:
+      213: -2370779278088444636
+    second: Alphabet yellow_14
+  - first:
+      213: -4388421201327608250
+    second: Alphabet yellow_15
+  - first:
+      213: -2372673926805862724
+    second: Alphabet yellow_16
+  - first:
+      213: 5126578200342086611
+    second: Alphabet yellow_17
+  - first:
+      213: -6946561511995060337
+    second: Alphabet yellow_18
+  - first:
+      213: -6626463602659945206
+    second: Alphabet yellow_19
+  - first:
+      213: 5900609315162457116
+    second: Alphabet yellow_20
+  - first:
+      213: 7926709712245105307
+    second: Alphabet yellow_21
+  - first:
+      213: -977006123382685986
+    second: Alphabet yellow_22
+  - first:
+      213: -6797784302828608636
+    second: Alphabet yellow_23
+  - first:
+      213: 4264972457916160317
+    second: Alphabet yellow_24
+  - first:
+      213: 112724222852049357
+    second: Alphabet yellow_25
+  - first:
+      213: 5631566482837273798
+    second: Alphabet yellow_26
+  - first:
+      213: -4305627958673299689
+    second: Alphabet yellow_27
+  - first:
+      213: -1120450364512627214
+    second: Alphabet yellow_28
+  - first:
+      213: 9035753984066503595
+    second: Alphabet yellow_29
+  - first:
+      213: -3519147686040733854
+    second: Alphabet yellow_30
+  - first:
+      213: -8727963178772487806
+    second: Alphabet yellow_31
+  - first:
+      213: -1626090744179755540
+    second: Alphabet yellow_32
+  - first:
+      213: 4603767640166275684
+    second: Alphabet yellow_33
+  - first:
+      213: 6913914029439060252
+    second: Alphabet yellow_34
+  - first:
+      213: 4041331706561001451
+    second: Alphabet yellow_35
+  - first:
+      213: 1066017733136664237
+    second: Alphabet yellow_36
+  - first:
+      213: 3284545650830672026
+    second: Alphabet yellow_37
+  - first:
+      213: -2653464144809528900
+    second: Alphabet yellow_38
+  - first:
+      213: 7451620100251086662
+    second: Alphabet yellow_39
+  - first:
+      213: -6401049235334822883
+    second: Alphabet yellow_40
+  - first:
+      213: 2952836421117662558
+    second: Alphabet yellow_41
+  - first:
+      213: 8659560914186419955
+    second: Alphabet yellow_42
+  - first:
+      213: 5761013994484323275
+    second: Alphabet yellow_43
+  - first:
+      213: -7564452319404292383
+    second: Alphabet yellow_44
+  - first:
+      213: 3922272174584226307
+    second: Alphabet yellow_45
+  - first:
+      213: 4571825097556912236
+    second: Alphabet yellow_46
+  - first:
+      213: -1980429076919992199
+    second: Alphabet yellow_47
+  - first:
+      213: -7997504184192493267
+    second: Alphabet yellow_48
+  - first:
+      213: -5344295751583747214
+    second: Alphabet yellow_49
+  - first:
+      213: 3854778246481607052
+    second: Alphabet yellow_50
+  - first:
+      213: -6657375757978404473
+    second: Alphabet yellow_51
+  - first:
+      213: 3245814500411361144
+    second: Alphabet yellow_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alphabet yellow_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 39
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48b56039607cfe50800000000000000
+      internalID: 6844469130782160974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2c6a03f3fe106c0800000000000000
+      internalID: -4178795924544896283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 39
+        width: 42
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7941aac9e37fac80800000000000000
+      internalID: -8309295339511133826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2decbc9125b67bf30800000000000000
+      internalID: 4591256345491787474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_4
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 39
+        width: 107
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107cbfae040068c30800000000000000
+      internalID: 4361173567975180033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_5
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 39
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425ccc9823512bfc0800000000000000
+      internalID: -3480696255199525596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b8279e9315f29f0800000000000000
+      internalID: -491084525188510927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_7
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 47
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae3e3665f3c3e700800000000000000
+      internalID: 568513436728573606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102b9b96366bbc590800000000000000
+      internalID: -7652822603694231039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_9
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 39
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e68b3825e95159f0800000000000000
+      internalID: -481504844394559770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc1b9616254a0b90800000000000000
+      internalID: -7274926218173276944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_11
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 14
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0528084ee6d7ad6e0800000000000000
+      internalID: -1811997984829701552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_12
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a689f283df0784f10800000000000000
+      internalID: 2254175846370613354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 5
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff458d94927b8bff0800000000000000
+      internalID: -20064810362710785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4256ea8becc491fd0800000000000000
+      internalID: -2370779278088444636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_15
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e23121b223913c0800000000000000
+      internalID: -4388421201327608250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_16
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6c7e072a1921fd0800000000000000
+      internalID: -2372673926805862724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 5
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3c6a026b3452740800000000000000
+      internalID: 5126578200342086611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f422bfb1bd89f90800000000000000
+      internalID: -6946561511995060337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_19
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05166e36721a04a0800000000000000
+      internalID: -6626463602659945206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_20
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 5
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c148e9cc8ec23e150800000000000000
+      internalID: 5900609315162457116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_21
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92220c5c74510e60800000000000000
+      internalID: 7926709712245105307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 5
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edeb4607b1af072f0800000000000000
+      internalID: -977006123382685986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_23
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483ac2a513b69a1a0800000000000000
+      internalID: -6797784302828608636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_24
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39daea8ad9303b30800000000000000
+      internalID: 4264972457916160317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_25
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 4
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9adac551a709100800000000000000
+      internalID: 112724222852049357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_26
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 5
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ccf28af0e7572e40800000000000000
+      internalID: 5631566482837273798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_27
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 717a94c0f265f34c0800000000000000
+      internalID: -4305627958673299689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_28
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f594c2745c5370f0800000000000000
+      internalID: -1120450364512627214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_29
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3ca120062756d70800000000000000
+      internalID: 9035753984066503595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_30
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267776523d9792fc0800000000000000
+      internalID: -3519147686040733854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281a39c4bbb00e680800000000000000
+      internalID: -8727963178772487806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_32
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce57d946517fe69e0800000000000000
+      internalID: -1626090744179755540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_33
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a9c84e64ed3ef30800000000000000
+      internalID: 4603767640166275684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_34
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 14
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c190e44ad2823ff50800000000000000
+      internalID: 6913914029439060252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_35
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 14
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7771576c1b51830800000000000000
+      internalID: 4041331706561001451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6c0e3fa714bce00800000000000000
+      internalID: 1066017733136664237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_37
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a90015efddc059d20800000000000000
+      internalID: 3284545650830672026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_38
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb174604b600d2bd0800000000000000
+      internalID: -2653464144809528900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_39
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f60a43009796760800000000000000
+      internalID: 7451620100251086662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14051a72a7ea27a0800000000000000
+      internalID: -6401049235334822883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_41
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55dd8884159af820800000000000000
+      internalID: 2952836421117662558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_42
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe30f865c0fc2870800000000000000
+      internalID: 8659560914186419955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 5
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3da4f64bb33ff40800000000000000
+      internalID: 5761013994484323275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_44
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 4
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6078591baa50790800000000000000
+      internalID: -7564452319404292383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_45
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 5
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302ed7ef2c5be6630800000000000000
+      internalID: 3922272174584226307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_46
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c68681324b2627f30800000000000000
+      internalID: 4571825097556912236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_47
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 970445f4f3a1484e0800000000000000
+      internalID: -1980429076919992199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_48
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29918b2158230190800000000000000
+      internalID: -7997504184192493267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_49
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273b838445f35d5b0800000000000000
+      internalID: -5344295751583747214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_50
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 5
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c897075446cee7530800000000000000
+      internalID: 3854778246481607052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_51
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789766935004c93a0800000000000000
+      internalID: -6657375757978404473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alphabet yellow_52
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 5
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877c4df47137b0d20800000000000000
+      internalID: 3245814500411361144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alphabet yellow_0: 6844469130782160974
+      Alphabet yellow_1: -4178795924544896283
+      Alphabet yellow_10: -7274926218173276944
+      Alphabet yellow_11: -1811997984829701552
+      Alphabet yellow_12: 2254175846370613354
+      Alphabet yellow_13: -20064810362710785
+      Alphabet yellow_14: -2370779278088444636
+      Alphabet yellow_15: -4388421201327608250
+      Alphabet yellow_16: -2372673926805862724
+      Alphabet yellow_17: 5126578200342086611
+      Alphabet yellow_18: -6946561511995060337
+      Alphabet yellow_19: -6626463602659945206
+      Alphabet yellow_2: -8309295339511133826
+      Alphabet yellow_20: 5900609315162457116
+      Alphabet yellow_21: 7926709712245105307
+      Alphabet yellow_22: -977006123382685986
+      Alphabet yellow_23: -6797784302828608636
+      Alphabet yellow_24: 4264972457916160317
+      Alphabet yellow_25: 112724222852049357
+      Alphabet yellow_26: 5631566482837273798
+      Alphabet yellow_27: -4305627958673299689
+      Alphabet yellow_28: -1120450364512627214
+      Alphabet yellow_29: 9035753984066503595
+      Alphabet yellow_3: 4591256345491787474
+      Alphabet yellow_30: -3519147686040733854
+      Alphabet yellow_31: -8727963178772487806
+      Alphabet yellow_32: -1626090744179755540
+      Alphabet yellow_33: 4603767640166275684
+      Alphabet yellow_34: 6913914029439060252
+      Alphabet yellow_35: 4041331706561001451
+      Alphabet yellow_36: 1066017733136664237
+      Alphabet yellow_37: 3284545650830672026
+      Alphabet yellow_38: -2653464144809528900
+      Alphabet yellow_39: 7451620100251086662
+      Alphabet yellow_4: 4361173567975180033
+      Alphabet yellow_40: -6401049235334822883
+      Alphabet yellow_41: 2952836421117662558
+      Alphabet yellow_42: 8659560914186419955
+      Alphabet yellow_43: 5761013994484323275
+      Alphabet yellow_44: -7564452319404292383
+      Alphabet yellow_45: 3922272174584226307
+      Alphabet yellow_46: 4571825097556912236
+      Alphabet yellow_47: -1980429076919992199
+      Alphabet yellow_48: -7997504184192493267
+      Alphabet yellow_49: -5344295751583747214
+      Alphabet yellow_5: -3480696255199525596
+      Alphabet yellow_50: 3854778246481607052
+      Alphabet yellow_51: -6657375757978404473
+      Alphabet yellow_52: 3245814500411361144
+      Alphabet yellow_6: -491084525188510927
+      Alphabet yellow_7: 568513436728573606
+      Alphabet yellow_8: -7652822603694231039
+      Alphabet yellow_9: -481504844394559770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

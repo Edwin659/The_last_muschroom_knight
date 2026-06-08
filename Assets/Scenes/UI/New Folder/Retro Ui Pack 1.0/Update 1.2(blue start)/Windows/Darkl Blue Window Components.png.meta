@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 16d579f6fad36c64393d5418ccf0f058
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 329558285679947000
+    second: Darkl Blue Window Components_0
+  - first:
+      213: -3085675051844292839
+    second: Darkl Blue Window Components_1
+  - first:
+      213: 8826052251731957449
+    second: Darkl Blue Window Components_2
+  - first:
+      213: -2075181833783859503
+    second: Darkl Blue Window Components_3
+  - first:
+      213: 7583585711581414520
+    second: Darkl Blue Window Components_4
+  - first:
+      213: 4434292404226793279
+    second: Darkl Blue Window Components_5
+  - first:
+      213: 2451119637835465859
+    second: Darkl Blue Window Components_6
+  - first:
+      213: 249791111550371524
+    second: Darkl Blue Window Components_7
+  - first:
+      213: -8245976516390239145
+    second: Darkl Blue Window Components_8
+  - first:
+      213: -6158450587288290163
+    second: Darkl Blue Window Components_9
+  - first:
+      213: 1128204966618598682
+    second: Darkl Blue Window Components_10
+  - first:
+      213: 1113621762538956976
+    second: Darkl Blue Window Components_11
+  - first:
+      213: -3165518319265169818
+    second: Darkl Blue Window Components_12
+  - first:
+      213: 4483339107733559844
+    second: Darkl Blue Window Components_13
+  - first:
+      213: -4756422791924162042
+    second: Darkl Blue Window Components_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 48
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc6db6c383d29400800000000000000
+      internalID: 329558285679947000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 35
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f298293ea7d25d0800000000000000
+      internalID: -3085675051844292839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 37
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c61581b2cf6c7a70800000000000000
+      internalID: 8826052251731957449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 37
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d628f0fd197333e0800000000000000
+      internalID: -2075181833783859503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 37
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874c98e660f4e3960800000000000000
+      internalID: 7583585711581414520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_5
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 18
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f9620a275c98d30800000000000000
+      internalID: 4434292404226793279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 6
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 384ca23f250240220800000000000000
+      internalID: 2451119637835465859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 17
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6820841bf677300800000000000000
+      internalID: 249791111550371524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 6
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754c8522c08609d80800000000000000
+      internalID: -8245976516390239145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 6
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cb2e9d1d9c88aa0800000000000000
+      internalID: -6158450587288290163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 18
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d022d807038af00800000000000000
+      internalID: 1128204966618598682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 17
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b86742c711647f00800000000000000
+      internalID: 1113621762538956976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 6
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e353a3cd1d114d0800000000000000
+      internalID: -3165518319265169818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 18
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a531c2a25083e30800000000000000
+      internalID: 4483339107733559844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkl Blue Window Components_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 6
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602e9cddbaacdfdb0800000000000000
+      internalID: -4756422791924162042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Darkl Blue Window Components_0: 329558285679947000
+      Darkl Blue Window Components_1: -3085675051844292839
+      Darkl Blue Window Components_10: 1128204966618598682
+      Darkl Blue Window Components_11: 1113621762538956976
+      Darkl Blue Window Components_12: -3165518319265169818
+      Darkl Blue Window Components_13: 4483339107733559844
+      Darkl Blue Window Components_14: -4756422791924162042
+      Darkl Blue Window Components_2: 8826052251731957449
+      Darkl Blue Window Components_3: -2075181833783859503
+      Darkl Blue Window Components_4: 7583585711581414520
+      Darkl Blue Window Components_5: 4434292404226793279
+      Darkl Blue Window Components_6: 2451119637835465859
+      Darkl Blue Window Components_7: 249791111550371524
+      Darkl Blue Window Components_8: -8245976516390239145
+      Darkl Blue Window Components_9: -6158450587288290163
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
