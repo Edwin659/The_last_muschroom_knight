@@ -11,7 +11,7 @@ public class DoorController : MonoBehaviour
 
     public string nextLevelName1;
     public string nextLevelName2;
-    //public string winMenu;
+    public string winMenu;
 
     public GameObject overlayPanel;
     public TMP_Text messageText;
@@ -22,16 +22,6 @@ public class DoorController : MonoBehaviour
     private string sceneToLoad;
     // Variables for Level 2
     private bool bossDead = false;
-
-    public void AddCoin()
-    {
-        coinsCollected++;
-    }
-
-    public void BossDefeated()
-    {
-        bossDead = true;
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -47,15 +37,14 @@ public class DoorController : MonoBehaviour
                 if (CoinUIManager.instance.GetCoinCount() >= coinsRequired)
                     ShowOverlay("Level 1 Fini, passage au level 2", nextLevelName2);
                 break;
-        }
 
-        //case LevelType.Level2:
-        //  if (bossDead)
-        //{
-        //ShowOverlay("Boss vaincu, passage au prochain niveau",winMenu);
-        //}
-        //break;
-        //}
+        case LevelType.Level2:
+            if (bossDead)
+            {
+                ShowOverlay("Boss vaincu",winMenu);
+            }
+        break;
+        }
     }
     private void ShowOverlay(string msg, string sceneName)
     {

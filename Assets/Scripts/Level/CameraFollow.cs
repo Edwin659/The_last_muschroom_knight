@@ -17,17 +17,17 @@ public class CameraFollow : MonoBehaviour
     {
         if (player == null) return;
 
-        // Taille fixe de la caméra
-        camHalfHeight = Camera.main.orthographicSize;
-        camHalfWidth = camHalfHeight * (16f / 9f); // ratio forcé 16:9
+        // Camera
+        camHalfHeight = UnityEngine.Camera.main.orthographicSize;
+        camHalfWidth = camHalfHeight * (16f / 9f);
 
-        // Position cible centrée sur le joueur
+        // player in center
         float targetX = player.position.x + offset.x;
         float targetY = player.position.y + offset.y + upwardLook;
 
         Vector3 desiredPosition = new Vector3(targetX, targetY, offset.z);
 
-        // Limites calculées à partir des colliders
+        // limite
         float minX = leftBoundary.bounds.max.x + camHalfWidth;
         float maxX = rightBoundary.bounds.min.x - camHalfWidth;
 

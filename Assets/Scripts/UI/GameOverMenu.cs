@@ -11,6 +11,10 @@ public class GameOverMenu : MonoBehaviour
         string lastScene = PlayerPrefs.GetString("LastScene", "MenuScene");
         SceneManager.LoadScene(lastScene);
     }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void QuitGame()
     {

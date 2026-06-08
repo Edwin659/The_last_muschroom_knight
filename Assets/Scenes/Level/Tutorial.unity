@@ -445,11 +445,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2333284770398568035, guid: 575b00d509e747840b2970d14b2bfdad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -617
+      value: -615
       objectReference: {fileID: 0}
     - target: {fileID: 2333284770398568035, guid: 575b00d509e747840b2970d14b2bfdad, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 418
+      value: 452
       objectReference: {fileID: 0}
     - target: {fileID: 3053277531399606641, guid: 575b00d509e747840b2970d14b2bfdad, type: 3}
       propertyPath: m_UiScaleMode
@@ -690,12 +690,16 @@ MonoBehaviour:
   dialogueLines:
   - Press enter to continue\n or do the giving order
   - Hello player,
+  - The Great Lord Acornis has captured your friends and family. Try to beat him.
+  - Here are some essential actions to know before.
   - 'Jumping will help you to avoid obstacles and enemies along the way '
   - Try to jump by pressing space !
   - Try to run by pressing shift and walk !
   - 'Attack is used to fight enemies and the  Great Lord Acornis !  '
   - Try to attack by pressing E !
   - Nice job !
+  - You should\n fight the ennemies and collect the accorn coins.
+  - And the green accorns heal you !
   - Let experience \nand finish this tutorial, killing the enemies\n and collect
     \nenough acorns!
 --- !u!1001 &671514470
@@ -815,6 +819,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 475860165296251020, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 433230207}
+    - target: {fileID: 475860165296251020, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
+      propertyPath: offset.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 475860165296251020, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
+      propertyPath: leftBoundary
+      value: 
+      objectReference: {fileID: 1614285536}
+    - target: {fileID: 475860165296251020, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
+      propertyPath: rightBoundary
+      value: 
+      objectReference: {fileID: 1368915954}
     - target: {fileID: 651507167838052074, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
       propertyPath: player
       value: 
@@ -907,6 +927,10 @@ PrefabInstance:
     - target: {fileID: 788842770613159459, guid: b9ed7593e643d844888487c0db403007, type: 3}
       propertyPath: m_RenderMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1050011611592696970, guid: b9ed7593e643d844888487c0db403007, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1130256801666572598, guid: b9ed7593e643d844888487c0db403007, type: 3}
       propertyPath: m_UiScaleMode

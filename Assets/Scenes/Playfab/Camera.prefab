@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8665748752201946739}
   - component: {fileID: 6214577170446180920}
-  - component: {fileID: 651507167838052074}
   - component: {fileID: 2940459983661608761}
   - component: {fileID: 1154134792871513584}
+  - component: {fileID: 475860165296251020}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -43,24 +43,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3583415888798737018}
   m_Enabled: 1
---- !u!114 &651507167838052074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3583415888798737018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44205e32ee77a0244b260bd2f456b261, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Camera
-  player: {fileID: 8821467498031203969, guid: 575b00d509e747840b2970d14b2bfdad, type: 3}
-  offset: {x: 0, y: 0, z: -10}
-  upwardLook: 0.6
-  smoothSpeed: 40
-  leftBoundary: {fileID: 0}
-  rightBoundary: {fileID: 0}
 --- !u!20 &2940459983661608761
 Camera:
   m_ObjectHideFlags: 0
@@ -156,3 +138,21 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &475860165296251020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3583415888798737018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44205e32ee77a0244b260bd2f456b261, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  player: {fileID: 8821467498031203969, guid: 575b00d509e747840b2970d14b2bfdad, type: 3}
+  offset: {x: 0, y: 0, z: 0}
+  upwardLook: 0.5
+  smoothSpeed: 0.8
+  leftBoundary: {fileID: 0}
+  rightBoundary: {fileID: 0}

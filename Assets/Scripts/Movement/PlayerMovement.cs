@@ -188,7 +188,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerHealth health = GetComponent<PlayerHealth>();
         if (health != null && health.isHurt)
         {
-            // stoppe net le mouvement horizontal
+            // stoppe movement
             playerRb.linearVelocity = new Vector2(0, playerRb.linearVelocity.y);
             return;
         }
@@ -219,7 +219,6 @@ public class PlayerMovement : MonoBehaviour
                     previousNormal = smoothedNormal;
 
                     float angle = Mathf.Atan2(smoothedNormal.y, smoothedNormal.x) * Mathf.Rad2Deg;
-                    //Debug.Log(angle);
                     float targetAngle = angle - 90;
 
                     //if 60f>angle>6f
