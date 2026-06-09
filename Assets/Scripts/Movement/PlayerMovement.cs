@@ -54,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip JumpSound;
     public AudioClip LandingSound;
     public AudioClip AttackSound;
+    public AudioClip CoinsSound;
 
 
     //Friction
@@ -78,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             CoinUIManager.instance.AddCoin();
+                audioSource.PlayOneShot(CoinsSound, 0.1f);
             Destroy(other.gameObject);
         }
         if (other.CompareTag("HealthGain"))

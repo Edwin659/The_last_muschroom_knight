@@ -25,6 +25,12 @@ public class PlayerHealth : MonoBehaviour
     private Collider2D ignoredSourceCollider;
     private Coroutine invincibilityRoutine;
 
+    public AudioSource audioSource;
+    public AudioClip hurtClip;
+    public AudioClip deathClip;
+    public AudioClip healClip;
+
+
     void Start()
     {
         isDead = false;
@@ -57,6 +63,9 @@ public class PlayerHealth : MonoBehaviour
         canBeHit = false;
         isHurt = true;
         currentHealth -= damage;
+
+        if (hurtClip != null && audioSource != null)
+            audioSource.PlayOneShot(hurtClip);
 
         if (healthSlider != null)
             healthSlider.value = currentHealth;
@@ -131,6 +140,9 @@ public class PlayerHealth : MonoBehaviour
             healthSlider.value = currentHealth;
         if (LifeBarController.instance != null)
             LifeBarController.instance.currentLives = 3;
+        if (healClip != null && audioSource != null)
+            audioSource.PlayOneShot(healClip);
+
         isHurt = false;
         canBeHit = true;
     }
@@ -163,6 +175,10 @@ public class PlayerHealth : MonoBehaviour
             playerAnim.SetTrigger("IsDead");
 
         isDead = true;
+
+        if (deathClip != null && audioSource != null)
+            audioSource.PlayOneShot(deathClip);
+
 
 
         //Stop movement

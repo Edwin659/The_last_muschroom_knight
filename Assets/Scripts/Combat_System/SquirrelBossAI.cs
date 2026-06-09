@@ -494,6 +494,9 @@ public class SquirrelBossAI : MonoBehaviour
         chargeTargetX = playerTransform.position.x;
         SetContactDamage(true);
 
+        var sound = GetComponent<BossSoundController>();
+        if (sound != null) sound.PlayAttack();
+
         if (animator != null)
         {
             animator.SetBool(IsRunningHash, false);
@@ -546,6 +549,9 @@ public class SquirrelBossAI : MonoBehaviour
 
         if (animator != null)
             animator.SetBool(IsRunningHash, false);
+
+        var sound = GetComponent<BossSoundController>();
+        if (sound != null) sound.PlayThrow();
 
         if (animator != null)
             animator.SetTrigger(IsThrowingHash);
