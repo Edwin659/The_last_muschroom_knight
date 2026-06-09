@@ -935,7 +935,7 @@ MonoBehaviour:
   audioSource: {fileID: 829973070}
   menuMusic: {fileID: 8300000, guid: bf2cdcee8f5924bacafd60b7f26dcaed, type: 3}
   tutoMusic: {fileID: 8300000, guid: 7e371b800dc9b49b6a803715bc37b8e2, type: 3}
-  level1Music: {fileID: 8300000, guid: ffc95b83c9f8344ebb6214eb5b0b3087, type: 3}
+  level1Music: {fileID: 8300000, guid: 2d2b8b1eb628b4805a48ef1ec4f1247f, type: 3}
   level2Music: {fileID: 8300000, guid: 2d2b8b1eb628b4805a48ef1ec4f1247f, type: 3}
   victoryMusic: {fileID: 8300000, guid: 919ab21e0f92a4aa492915577aa9328d, type: 3}
   defeatMusic: {fileID: 8300000, guid: 51c6d14fb431e41378c7d9473cccaa5b, type: 3}
