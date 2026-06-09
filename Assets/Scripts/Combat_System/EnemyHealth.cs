@@ -28,6 +28,9 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= amount;
         if (healthSlider != null)
             healthSlider.value = currentHealth;
+        if (GetComponent<EnemySoundController>() != null)
+            GetComponent<EnemySoundController>().PlayHurt();
+
 
         if (currentHealth <= 0)
         {
@@ -53,6 +56,8 @@ public class EnemyHealth : MonoBehaviour
         isDead = true;
         if (enemyAnim != null)
             enemyAnim.SetTrigger("isDead");
+        if (GetComponent<EnemySoundController>() != null)
+            GetComponent<EnemySoundController>().PlayDeath();
         GetComponent<Collider2D>().enabled = false; //stop collider
         GetComponent<Rigidbody2D>().simulated = false;
         StartCoroutine(DieRoutine());

@@ -102,6 +102,7 @@ MonoBehaviour:
   JumpSound: {fileID: 8300000, guid: 4e349dc959014a845b9aa317d1c2b7f0, type: 3}
   LandingSound: {fileID: 8300000, guid: eaae8fe8d600e1f459f34aa5757fa3b8, type: 3}
   AttackSound: {fileID: 8300000, guid: 323e15cfe809e114ab92c9f4b25e8bc2, type: 3}
+  CoinsSound: {fileID: 8300000, guid: 8ce14858148c08a459f93602337335eb, type: 3}
   noFriction: {fileID: 6200000, guid: 7dfa6f1e7a22eec4f94fb04be3f290be, type: 2}
   highFriction: {fileID: 6200000, guid: 34c1037d563d7f24d981181eaf23fef6, type: 2}
 --- !u!82 &9158704651841580294
@@ -254,10 +255,16 @@ MonoBehaviour:
   currentHealth: 0
   playerAnim: {fileID: 1615989544500094464}
   healthSlider: {fileID: 956345694582387181}
+  invincibilityDuration: 1.5
+  invincibilityFlashInterval: 0.1
   isDead: 0
   isHurt: 0
   lifeBarController: {fileID: 7328782844742022021, guid: b9ed7593e643d844888487c0db403007, type: 3}
   deathZone: {fileID: 5672984683528179212, guid: 1984f5a4e4b27d943a7dfcf7c167e5cb, type: 3}
+  audioSource: {fileID: 9158704651841580294}
+  hurtClip: {fileID: 8300000, guid: 2b21ef916f6943c439b71a7c74568878, type: 3}
+  deathClip: {fileID: 8300000, guid: ffdd88f5ca87b1d478047b0a0b2e5e1a, type: 3}
+  healClip: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
 --- !u!114 &5530511303005303819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerDamage
   playerAnim: {fileID: 1615989544500094464}
+  stompBounce: 5
 --- !u!61 &5923505570125593340
 BoxCollider2D:
   m_ObjectHideFlags: 0

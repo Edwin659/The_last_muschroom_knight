@@ -30,18 +30,18 @@ public class DoorController : MonoBehaviour
         switch (currentLevel)
         {
             case LevelType.Tutorial:
-                ShowOverlay("Tutoriel Fini, passage au level 1", nextLevelName1);
+                ShowOverlay("Tutorial Done, move to level 1", nextLevelName1);
                 break;
 
             case LevelType.Level1:
                 if (CoinUIManager.instance.GetCoinCount() >= coinsRequired)
-                    ShowOverlay("Level 1 Fini, passage au \nlevel 2", nextLevelName2);
+                    ShowOverlay("Level 1 Finished, move to \nlevel 2", nextLevelName2);
                 break;
 
         case LevelType.Level2:
             if (bossDead)
             {
-                ShowOverlay("Boss vaincu",winMenu);
+                ShowOverlay("Boss defeated",winMenu);
             }
         break;
         }

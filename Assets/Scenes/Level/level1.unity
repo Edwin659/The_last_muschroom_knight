@@ -276,6 +276,10 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 938069439}
+    - target: {fileID: 6900150230385701662, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30751,7 +30755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1222898383522408320, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
       propertyPath: m_text
-      value: Level 1 Fini, passage au\n level 2
+      value: Level 1 Finished, move to \nlevel 2
       objectReference: {fileID: 0}
     - target: {fileID: 1222898383522408320, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
       propertyPath: m_sharedMaterial
@@ -30768,6 +30772,22 @@ PrefabInstance:
     - target: {fileID: 4913613426057502934, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166282806961165506, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1900.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166282806961165506, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 653.842
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166282806961165506, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.798
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166282806961165506, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 132.58905
       objectReference: {fileID: 0}
     - target: {fileID: 8445832143429671252, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
       propertyPath: m_Pivot.x
@@ -31624,6 +31644,10 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 1719443445}
+    - target: {fileID: 6900150230385701662, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31859,6 +31883,10 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 558746213}
+    - target: {fileID: 6900150230385701662, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32165,6 +32193,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pidgeon Sprite Sheet_12 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3007724121708215025, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     - target: {fileID: 8100000000000000005, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
       propertyPath: playerTransform
       value: 
@@ -32757,6 +32789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pidgeon Sprite Sheet_12 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3007724121708215025, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     - target: {fileID: 8100000000000000005, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
       propertyPath: playerTransform
       value: 
@@ -33354,6 +33390,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
+--- !u!4 &1326767920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8665748752201946739, guid: 1b8df47bb16b02a4f88c8e486eaf5511, type: 3}
+  m_PrefabInstance: {fileID: 1326767919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1347681956
 GameObject:
   m_ObjectHideFlags: 0
@@ -33714,6 +33755,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pidgeon Sprite Sheet_12 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3007724121708215025, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     - target: {fileID: 8100000000000000005, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
       propertyPath: playerTransform
       value: 
@@ -34202,6 +34247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pidgeon Sprite Sheet_12 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3007724121708215025, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1326767920}
     - target: {fileID: 8100000000000000005, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
       propertyPath: playerTransform
       value: 
@@ -34395,6 +34444,10 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[1]'
       value: 
       objectReference: {fileID: 634198832}
+    - target: {fileID: 6900150230385701662, guid: d38f372e5b063854eb6ca3b1a8e76b88, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35661,6 +35714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pidgeon Sprite Sheet_12 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3007724121708215025, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 665458129}
     - target: {fileID: 8100000000000000005, guid: e9b667d2c321fde489ef67392038ec12, type: 3}
       propertyPath: playerTransform
       value: 
