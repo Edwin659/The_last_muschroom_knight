@@ -28,7 +28,7 @@ public class PigeonEnemyMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         health = GetComponent<EnemyHealth>();
         homePosition = transform.position;
-
+    
         if (playerTransform == null)
         {
             GameObject playerObject = GameObject.FindGameObjectWithTag("Player");

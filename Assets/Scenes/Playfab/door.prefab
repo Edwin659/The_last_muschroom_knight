@@ -152,6 +152,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorController
   currentLevel: 1
-  nextLevelName1: Level1
-  nextLevelName2: Level2
+  nextLevelName1: Scenes/UI/Level1objective
+  nextLevelName2: Scenes/UI/Level2objective
+  winMenu: Scenes/UI/GameComplete
+  overlayPanel: {fileID: 0}
+  messageText: {fileID: 0}
   coinsRequired: 10
+  bossDead: 0

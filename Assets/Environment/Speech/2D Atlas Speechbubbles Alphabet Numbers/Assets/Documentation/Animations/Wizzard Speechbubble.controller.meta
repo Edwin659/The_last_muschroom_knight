@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3b0803bba1205474cab9550d9b6c9365
+timeCreated: 1492518927
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 88398
+  packageName: 2D Atlas Speech bubbles Alphabet Numbers
+  packageVersion: 1.7
+  assetPath: Assets/2D Atlas Speechbubbles Alphabet Numbers/Assets/Animations/Wizzard
+    Speechbubble.controller
+  uploadId: 409667

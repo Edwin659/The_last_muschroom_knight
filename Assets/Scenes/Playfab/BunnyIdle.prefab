@@ -1113,7 +1113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MonsterDamage
   damage: 20
-  damageCooldown: 1
+  damageCooldown: 2
 --- !u!4 &5483338781230664287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 8de475de4a2994b4686286cbe9f363f5, type: 3}

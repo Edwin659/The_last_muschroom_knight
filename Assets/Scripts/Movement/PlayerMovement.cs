@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     float currentspeed;
     float input;
     private SpriteRenderer spriteRenderer;
-
+    private PlayerDamage playerDamage;
 
     //Ground
     public LayerMask groundLayer;
@@ -69,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
         playerRb = GetComponent<Rigidbody2D>(); // Parent
         playerAnim = GetComponentInChildren<Animator>(); // Children
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        playerDamage = GetComponent<PlayerDamage>();
         KBCounter = 0f;
     }
 
@@ -188,7 +189,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerHealth health = GetComponent<PlayerHealth>();
         if (health != null && health.isHurt)
         {
-            // stoppe net le mouvement horizontal
+            // stoppe movement
             playerRb.linearVelocity = new Vector2(0, playerRb.linearVelocity.y);
             return;
         }
@@ -219,7 +220,6 @@ public class PlayerMovement : MonoBehaviour
                     previousNormal = smoothedNormal;
 
                     float angle = Mathf.Atan2(smoothedNormal.y, smoothedNormal.x) * Mathf.Rad2Deg;
-                    //Debug.Log(angle);
                     float targetAngle = angle - 90;
 
                     //if 60f>angle>6f
@@ -273,6 +273,10 @@ public class PlayerMovement : MonoBehaviour
         playerAnim.SetTrigger("IsAttacking");
         playerRb.linearVelocity = Vector2.zero;
         Invoke("PlayAttackSound", 0.7f);
+        if (playerDamage != null)
+        {
+            playerDamage.DealDamage();
+        }
     }
     void PlayAttackSound()
     {
