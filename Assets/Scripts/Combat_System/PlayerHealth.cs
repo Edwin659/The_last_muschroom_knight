@@ -219,8 +219,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void NoLife()
     {
-        Debug.Log("GAME OVER");
-
         // Save current scene
         string currentSceneName = SceneManager.GetActiveScene().name;
         PlayerPrefs.SetString("LastScene", currentSceneName);
@@ -232,6 +230,6 @@ public class PlayerHealth : MonoBehaviour
             LifeBarController.instance = null;
         }
         //GameOver
-        SceneManager.LoadScene("GameOverScene");
+        SceneManager.LoadScene("GameOverMenu");
     }
 }

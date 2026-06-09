@@ -18,10 +18,10 @@ public class DoorController : MonoBehaviour
 
     // Variables for Level 1
     public int coinsRequired = 0;
-    private int coinsCollected = 0;
-    private string sceneToLoad;
+    public string sceneToLoad;
+
     // Variables for Level 2
-    private bool bossDead = false;
+    public bool bossDead = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -35,7 +35,7 @@ public class DoorController : MonoBehaviour
 
             case LevelType.Level1:
                 if (CoinUIManager.instance.GetCoinCount() >= coinsRequired)
-                    ShowOverlay("Level 1 Fini, passage au level 2", nextLevelName2);
+                    ShowOverlay("Level 1 Fini, passage au \nlevel 2", nextLevelName2);
                 break;
 
         case LevelType.Level2:
@@ -52,9 +52,30 @@ public class DoorController : MonoBehaviour
         overlayPanel.SetActive(true);
         messageText.text = msg;
     }
+    public void SetBossDead()
+    {
+        bossDead = true;
+    }
+
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(sceneToLoad);
+        if (string.IsNullOrEmpty(sceneToLoad))
+        {
+            Debug.LogError("SceneToLoad is empty !");
+            return;
+        }
+
+        Debug.Log("scene to load: " + sceneToLoad);
+
+        if (Application.CanStreamedLevelBeLoaded(sceneToLoad))
+        {
+            SceneManager.LoadScene(sceneToLoad);
+        }
+        else
+        {
+            Debug.LogError("the scene " + sceneToLoad + " is not in built !");
+        }
     }
-    
+
+
 }

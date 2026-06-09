@@ -4,13 +4,7 @@ using UnityEngine;
 
 using UnityEngine.UI;
 
-
-
-/// <summary>
-
-/// Boss-only health: 5 HP, 1 damage per hit, invincibility frames, hurt/death anims.
-
-/// </summary>
+/// Boss-only health: 5 HP, 1 damage per hit, invincibility frames, hurt/death anims
 
 public class BossHealth : MonoBehaviour
 
@@ -31,6 +25,8 @@ public class BossHealth : MonoBehaviour
     public float invincibilityDuration = 1.5f;
 
     public float deathAnimDuration = 1.2f;
+    public DoorController doorController; // assigner dans l’inspecteur
+
 
 
 
@@ -246,7 +242,10 @@ public class BossHealth : MonoBehaviour
 
             contactDamage.enabled = false;
 
-
+        if (doorController != null)
+        {
+            doorController.SetBossDead();
+        }
 
         foreach (Collider2D col in GetComponentsInChildren<Collider2D>())
 
@@ -277,5 +276,4 @@ public class BossHealth : MonoBehaviour
     }
 
 }
-
 

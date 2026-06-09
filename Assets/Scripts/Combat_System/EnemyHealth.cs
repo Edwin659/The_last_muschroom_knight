@@ -26,10 +26,6 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) return;
         currentHealth -= amount;
-        Debug.Log("Health");
-        Debug.Log(currentHealth);
-        Debug.Log("damage");
-        Debug.Log(amount);
         if (healthSlider != null)
             healthSlider.value = currentHealth;
 
@@ -63,7 +59,7 @@ public class EnemyHealth : MonoBehaviour
     }
     private IEnumerator DieRoutine()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
         Destroy(gameObject);
     }
 }
