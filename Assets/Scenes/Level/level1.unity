@@ -30771,6 +30771,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelEnd
       objectReference: {fileID: 0}
+    - target: {fileID: 2294865000687401761, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 74c28258edcc9f94f8e474f71838c56f, type: 2}
+    - target: {fileID: 2294865000687401761, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4913613426057502934, guid: 7252cd42e57506440be594446f7cecfb, type: 3}
       propertyPath: m_IsActive
       value: 0
